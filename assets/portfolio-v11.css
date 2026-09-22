@@ -159,3 +159,191 @@ img{content-visibility:auto}
   .p11-contactCopy h2{font-size:49px}
   .p11-contactFoot{flex-direction:column;gap:7px}
 }
+
+
+/* V11.1 — mobile refinement from device review */
+.p11-issuer{overflow:hidden}
+.p11-issuer img{width:100%!important;height:100%!important;object-fit:contain!important}
+
+/* Institution images that carry a white canvas blend naturally into light brand fields. */
+.careerBrand.qi img,.careerBrand.stone img{mix-blend-mode:multiply}
+.careerBrand.qi img{max-width:50%!important}
+.careerBrand.stone img{max-width:44%!important}
+
+@media(max-width:620px){
+  html{scroll-padding-top:76px}
+  body{font-size:16px}
+  .wrap{width:auto!important;max-width:none!important;padding-left:20px!important;padding-right:20px!important}
+  .nav .wrap{width:auto!important}
+  .navin{height:66px!important}
+  .brand{font-size:10.5px!important;letter-spacing:.075em!important}
+  .p10-menuBtn{font-size:11px!important;padding:0 8px!important}
+
+  /* Hero — keeps the portrait important without letting it dominate the first screen. */
+  .heroGrid{padding-top:18px!important}
+  .portrait{height:318px!important;border-radius:0 0 24px 24px!important;margin:0 -20px!important}
+  .portrait img{object-position:center 18%!important}
+  .portrait:after{left:20px!important;bottom:17px!important;letter-spacing:.19em!important}
+  .heroCopy{padding:42px 0 58px!important}
+  .hero h1{font-size:48px!important;line-height:.93!important;margin:17px 0 24px!important}
+  .heroLead{font-size:22px!important;line-height:1.22!important}
+  .heroText{font-size:15px!important;line-height:1.66!important}
+  .p10-heroMeta{margin-top:23px!important}
+
+  /* Mobile section rhythm */
+  .now,.p10-expertise,.journey,.p10-focus,.reg,.p11-credentials,.education{padding:70px 0!important}
+  .display{font-size:38px!important;line-height:1.04!important}
+  .sectionIntro .display{font-size:38px!important}
+  .sectionIntro>p,.p10-sectionCopy,.p11-certHeader>p{font-size:15px!important;line-height:1.62!important}
+  
+  /* Journey: all periods remain visible. No clipped horizontal chips. */
+  .journey .wrap{width:auto!important}
+  .journey .tabRail{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    overflow:visible!important;
+    padding:0!important;
+    margin:28px 0 14px!important;
+    mask-image:none!important;
+    -webkit-mask-image:none!important;
+  }
+  .journey .tabRail label{
+    width:100%!important;
+    min-width:0!important;
+    min-height:54px!important;
+    padding:10px 12px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.18!important;
+    font-size:11.5px!important;
+    border-radius:15px!important;
+  }
+  .journey .tabRail label:last-child:nth-child(odd){grid-column:1/-1}
+  .careerStage{border-radius:22px!important}
+  .careerBrand{min-height:205px!important;padding:26px 22px!important}
+  .careerBrand:before{inset:14px!important;border-radius:18px!important}
+  .careerBrand img{max-height:86px!important;max-width:54%!important}
+  .careerBrand.qi img{max-width:46%!important}
+  .careerBrand.nano img{max-width:60%!important}
+  .careerBrand.san img{max-width:46%!important;padding:12px 16px!important;border-radius:12px!important}
+  .careerBrand.itau img{max-width:28%!important}
+  .careerBrand.stone img{max-width:42%!important}
+  .careerBody{padding:30px 26px 34px!important}
+  .careerBody .chapter{font-size:10px!important;letter-spacing:.16em!important}
+  .careerBody .year{font-size:11px!important}
+  .careerBody h3{font-size:34px!important;margin:10px 0 7px!important}
+  .careerBody h4{font-size:16px!important;line-height:1.35!important;margin-bottom:20px!important}
+  .careerBody p{font-size:15.5px!important;line-height:1.58!important}
+  .careerHighlight{font-size:11.5px!important}
+  .hiIcon{width:26px!important;height:26px!important;font-size:21px!important}
+
+  /* Regulation: 2x2 control panel rather than a cropped horizontal carousel. */
+  .regBrand{gap:8px!important;margin:26px 0!important}
+  .regLogo{width:calc(50% - 4px)!important;height:68px!important;min-height:68px!important;border-radius:14px!important;padding:10px 12px!important}
+  .regLogo img{height:44px!important;max-height:44px!important;max-width:155px!important}
+  .regShell{grid-template-columns:1fr!important;border-radius:22px!important}
+  .regNav{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+    overflow:visible!important;
+    padding:10px!important;
+    border-right:0!important;
+    border-bottom:1px solid #29465b!important;
+  }
+  .regNav label{
+    min-width:0!important;
+    min-height:54px!important;
+    margin:0!important;
+    padding:10px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.2!important;
+    font-size:11px!important;
+    border-radius:12px!important;
+  }
+  .regPanel{padding:30px 24px 34px!important}
+  .regPanel h3{font-size:32px!important;line-height:1.05!important}
+  .regPanel p{font-size:15px!important;line-height:1.6!important}
+  .regFlow{gap:8px!important}
+  .regStep{min-height:0!important;padding:15px!important}
+
+  /* Credentials: compact 2x2 selector and shorter, denser credential card. */
+  .p11-certHeader{margin-bottom:24px!important}
+  .p11-credentialRail{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    overflow:visible!important;
+    padding:0!important;
+    margin:0 0 14px!important;
+    mask-image:none!important;
+    -webkit-mask-image:none!important;
+  }
+  .p11-credentialRail label{
+    min-width:0!important;
+    width:100%!important;
+    min-height:50px!important;
+    padding:10px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.15!important;
+    font-size:12px!important;
+    border-radius:15px!important;
+  }
+  .p11-certStage{border-radius:22px!important}
+  .p11-credentialVisual{min-height:220px!important;padding:24px!important}
+  .p11-credentialVisual:before{inset:14px!important;border-radius:17px!important}
+  .p11-issuer{
+    left:24px!important;top:24px!important;
+    width:108px!important;height:40px!important;
+    padding:5px 8px!important;border-radius:9px!important;
+    box-shadow:0 10px 26px rgba(0,0,0,.14)!important;
+  }
+  .p11-b3Wordmark{left:24px!important;top:22px!important;font-size:36px!important}
+  .p11-credentialCode{font-size:38px!important}
+  .p11-credentialType{font-size:10.5px!important;letter-spacing:.09em!important;margin-top:7px!important}
+  .p11-credentialMark{right:22px!important;bottom:20px!important;font-size:9px!important}
+  .p11-certCopy{padding:28px 24px 32px!important}
+  .p11-certCopy .status{font-size:9px!important;padding:6px 9px!important}
+  .p11-certCopy h3{font-size:34px!important;margin:14px 0 12px!important}
+  .p11-certCopy p{font-size:15.5px!important;line-height:1.58!important}
+  .p11-certMeta{margin-top:20px!important;gap:6px!important}
+  .p11-certMeta span{font-size:9px!important;padding:6px 8px!important}
+
+  /* Education uses visible selectors rather than an off-screen rail. */
+  .eduTabs .tabRail{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:7px!important;
+    overflow:visible!important;
+    padding:0!important;
+    margin:26px 0 14px!important;
+    mask-image:none!important;
+    -webkit-mask-image:none!important;
+  }
+  .eduTabs .tabRail label{
+    min-width:0!important;width:100%!important;min-height:48px!important;
+    padding:9px 7px!important;font-size:10.5px!important;white-space:normal!important;text-align:center!important;line-height:1.15!important;border-radius:14px!important
+  }
+
+  /* Contact */
+  .p11-footer{padding:70px 0 22px!important}
+  .p11-contactShell{padding:18px!important;border-radius:22px!important}
+  .p11-contactGrid{padding:34px 0 28px!important;gap:30px!important}
+  .p11-contactCopy h2{font-size:42px!important;line-height:.96!important}
+  .p11-contactCopy p{font-size:15px!important;line-height:1.6!important;margin-top:22px!important}
+  .p11-contactActions a{padding:16px 2px!important}
+}
+
+/* Very narrow phones */
+@media(max-width:380px){
+  .journey .tabRail label{font-size:10.5px!important;padding:9px 8px!important}
+  .regNav label{font-size:10px!important}
+  .p11-credentialRail label{font-size:11px!important}
+  .eduTabs .tabRail label{font-size:9.8px!important}
+}
