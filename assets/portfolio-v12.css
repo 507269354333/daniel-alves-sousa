@@ -323,3 +323,150 @@
   .p12-issuerText>strong{font-size:15px!important}
   .p12-issuerText:after{width:38px!important}
 }
+
+
+/* V12.2 — self-hosted career brands + mobile overflow cleanup */
+.careerBrand img{
+  pointer-events:none;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+/* All career marks are now local assets. The fields are intentionally quiet so
+   any white canvas in a legacy source image visually disappears into the panel. */
+.careerBrand.qi{
+  background:
+    radial-gradient(480px 260px at 74% 24%,rgba(38,169,199,.12),transparent 66%),
+    linear-gradient(145deg,#eef8fa,#dfedf1)!important;
+}
+.careerBrand.qi img{
+  max-width:44%!important;
+  max-height:92px!important;
+  mix-blend-mode:multiply!important;
+}
+
+.careerBrand.nano{
+  background:
+    radial-gradient(430px 260px at 70% 28%,rgba(255,255,255,.07),transparent 68%),
+    linear-gradient(145deg,#050607,#111416)!important;
+}
+.careerBrand.nano img{
+  max-width:58%!important;
+  max-height:92px!important;
+  mix-blend-mode:screen!important;
+}
+
+.careerBrand.san{
+  background:
+    radial-gradient(430px 260px at 76% 20%,rgba(227,6,19,.07),transparent 66%),
+    linear-gradient(145deg,#fff,#f8f4f4)!important;
+}
+.careerBrand.san:before{border-color:rgba(153,18,24,.10)!important}
+.careerBrand.san img{
+  max-width:48%!important;
+  max-height:96px!important;
+  filter:none!important;
+  mix-blend-mode:multiply!important;
+}
+
+.careerBrand.itau{
+  background:
+    radial-gradient(470px 260px at 76% 20%,rgba(236,112,0,.08),transparent 65%),
+    linear-gradient(145deg,#fffaf4,#f7efe7)!important;
+}
+.careerBrand.itau img{
+  max-width:29%!important;
+  max-height:126px!important;
+  mix-blend-mode:multiply!important;
+}
+
+.careerBrand.stone{
+  background:
+    radial-gradient(430px 280px at 78% 22%,rgba(0,168,104,.11),transparent 64%),
+    linear-gradient(145deg,#eefaf5,#dcf2e8)!important;
+}
+.careerBrand.stone img{
+  max-width:43%!important;
+  max-height:104px!important;
+  mix-blend-mode:multiply!important;
+}
+
+/* Journey coda: wrap instead of leaking horizontally on phones. */
+.p12-transitionLine{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:wrap!important;
+  gap:7px 9px!important;
+  width:100%!important;
+  max-width:100%!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-align:center!important;
+}
+.p12-transitionLine span{white-space:nowrap}
+.p12-transitionLine i{
+  font-style:normal;
+  opacity:.5;
+  font-size:.9em;
+}
+
+/* Institution cards should never crop their own labels. */
+.p12-regInstitution,
+.p12-regInstitution *{
+  box-sizing:border-box;
+}
+.p12-regInstitution{min-width:0!important;overflow:hidden}
+.p12-regInstitution>span:last-child{flex:1 1 auto!important;overflow:hidden}
+.p12-regInstitution b,
+.p12-regInstitution small{
+  display:block;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+
+/* Slightly calmer 'Em foco' introduction. */
+.p10-focus .p10-sectionHead{margin-bottom:38px!important}
+
+@media(max-width:620px){
+  /* Brand stage is shorter, and no mark depends on remote loading. */
+  .careerBrand{min-height:176px!important}
+  .careerBrand.qi img{max-width:48%!important;max-height:68px!important}
+  .careerBrand.nano img{max-width:56%!important;max-height:68px!important}
+  .careerBrand.san img{max-width:48%!important;max-height:70px!important}
+  .careerBrand.itau img{max-width:27%!important;max-height:82px!important}
+  .careerBrand.stone img{max-width:42%!important;max-height:76px!important}
+
+  .p12-transitionLine{
+    padding:6px 14px 0!important;
+    gap:5px 7px!important;
+    font-size:8px!important;
+    line-height:1.35!important;
+    letter-spacing:.10em!important;
+  }
+
+  /* Two compact stacked identity rows are more legible than squeezed half-width cards. */
+  .p12-regInstitutions{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    margin:22px 0 27px!important;
+  }
+  .p12-regInstitution{
+    min-height:62px!important;
+    padding:11px 14px!important;
+    gap:12px!important;
+  }
+  .p12-cvmInstitution .p12-instMonogram{min-width:72px!important}
+  .p12-anbimaInstitution .p12-anbimaWord{min-width:112px!important}
+  .p12-regInstitution b{font-size:10.5px!important}
+  .p12-regInstitution small{font-size:8.8px!important;line-height:1.25!important}
+
+  .p10-focus .p10-sectionHead{margin-bottom:26px!important}
+  .p10-focus .display{font-size:34px!important;line-height:1.02!important}
+  .p10-focus .p10-sectionCopy{font-size:14.5px!important;line-height:1.58!important}
+}
+
+@media(max-width:380px){
+  .p12-anbimaInstitution .p12-anbimaWord{min-width:98px!important}
+  .p12-regInstitution{padding-left:11px!important;padding-right:11px!important}
+}
