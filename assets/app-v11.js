@@ -15,4 +15,18 @@
   document.querySelectorAll('.careerBrand img,.regLogo img,.p11-issuer img').forEach(img => {
     img.addEventListener('error', () => img.closest('.careerBrand,.regLogo,.p11-issuer')?.classList.add('p11-image-fallback'));
   });
+
+
+  // Keep horizontal rails on larger mobile/tablet screens aligned to the active item.
+  const centerActiveTab = root => {
+    if (!root || innerWidth <= 620) return;
+    const checked = root.querySelector('input[type="radio"]:checked');
+    if (!checked) return;
+    const label = root.querySelector('label[for="'+checked.id+'"]');
+    label?.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  };
+  document.querySelectorAll('.journeyTabs,.certTabs,.eduTabs,.regTabs').forEach(root => {
+    root.addEventListener('change', () => requestAnimationFrame(() => centerActiveTab(root)));
+  });
+
 })();
