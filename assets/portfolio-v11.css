@@ -1,0 +1,161 @@
+
+/* Portfolio V11 — institutional polish */
+:root{
+  --p11-ink:#06131e;
+  --p11-ink-soft:#0c2232;
+  --p11-blue:#0a4d70;
+  --p11-blue-light:#8ec1d2;
+  --p11-paper:#f7f8f6;
+  --p11-line:rgba(6,19,30,.10);
+  --p11-gold:#b69a67;
+  --p11-shadow:0 28px 90px rgba(2,18,31,.12);
+}
+body{font-family:"Segoe UI Variable","Segoe UI",Inter,Arial,sans-serif!important;letter-spacing:-.005em}
+.display,h1,h2,h3{font-feature-settings:"kern" 1,"liga" 1;text-wrap:balance}
+.display{letter-spacing:-.052em!important}
+.label,.kicker,.chapter,.p11-sectionKicker,.p11-contactEyebrow{letter-spacing:.17em!important}
+p{letter-spacing:0}
+
+/* portrait: editorial rather than boxed photo */
+.portrait{
+  border-radius:36px 36px 4px 36px!important;
+  box-shadow:0 38px 120px rgba(0,0,0,.23)!important;
+  isolation:isolate;
+}
+.portrait img{
+  filter:saturate(.72) contrast(1.06) brightness(.97)!important;
+  transform:scale(1.012);
+}
+.portrait:before{
+  background:
+    linear-gradient(90deg,rgba(7,26,43,.9) 0%,rgba(7,26,43,.25) 24%,transparent 47%),
+    linear-gradient(0deg,rgba(7,26,43,.92) 0%,rgba(7,26,43,.18) 31%,transparent 55%)!important;
+}
+.portrait:after{
+  content:"DAS · MERCADO DE CAPITAIS"!important;display:block!important;
+  position:absolute;left:24px;right:auto;bottom:22px;z-index:4;
+  color:rgba(255,255,255,.72)!important;font-size:9px!important;letter-spacing:.22em!important;
+}
+
+/* institutional marks */
+.careerBrand{position:relative!important}
+.careerBrand:before{
+  content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.16);
+  border-radius:22px;pointer-events:none;
+}
+.careerBrand img{
+  width:auto!important;height:auto!important;max-height:128px!important;max-width:62%!important;
+  object-fit:contain!important;border-radius:0!important;box-shadow:none!important;
+  background:transparent!important;padding:0!important;
+}
+.careerBrand.qi{background:linear-gradient(145deg,#eef4f7,#dce9ef)!important}
+.careerBrand.qi:before,.careerBrand.stone:before{border-color:rgba(7,38,53,.08)}
+.careerBrand.qi img{max-width:56%!important}
+.careerBrand.nano{background:#060708!important}
+.careerBrand.nano img{max-width:68%!important}
+.careerBrand.san{background:linear-gradient(145deg,#e30613,#c90310)!important}
+.careerBrand.san img{max-width:48%!important;background:#fff!important;padding:20px 28px!important;border-radius:18px!important}
+.careerBrand.itau{background:linear-gradient(145deg,#ef7600,#d96100)!important}
+.careerBrand.itau img{max-width:32%!important}
+.careerBrand.stone{background:linear-gradient(145deg,#eaf9f3,#d8f1e7)!important}
+.careerBrand.stone img{max-width:48%!important}
+.regLogo img{filter:saturate(.92);max-height:58px!important}
+
+/* credentials */
+.p11-credentials{background:#f2f4f4!important;position:relative;overflow:hidden}
+.p11-credentials:before{
+  content:"";position:absolute;width:540px;height:540px;border-radius:50%;right:-210px;top:-180px;
+  background:radial-gradient(circle,rgba(11,91,126,.10),transparent 68%);pointer-events:none
+}
+.p11-sectionKicker{font-size:10px;text-transform:uppercase;font-weight:900;color:#8a979f;margin-bottom:14px}
+.p11-certHeader{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;margin-bottom:36px}
+.p11-certHeader .display{margin-bottom:0}
+.p11-certHeader>p{font-size:17px;line-height:1.72;color:#63717a;margin:0 0 8px}
+.p11-credentialRail{margin-top:0!important}
+.p11-credentialRail label{min-height:52px!important;border-radius:999px!important}
+.p11-certStage{border-radius:30px!important;background:#fff!important;box-shadow:var(--p11-shadow)!important;min-height:400px!important}
+.p11-certPanel{grid-template-columns:390px 1fr!important;min-height:400px!important;border:0!important}
+.p11-credentialVisual{
+  position:relative;min-height:400px;padding:42px;display:flex;flex-direction:column;justify-content:flex-end;
+  background:
+    radial-gradient(460px 320px at 85% 12%,rgba(119,194,216,.16),transparent 60%),
+    linear-gradient(145deg,#06131e,#0b2b41 72%,#0d3c54);
+  color:#fff;overflow:hidden;
+}
+.p11-credentialVisual:before{
+  content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.09);border-radius:22px
+}
+.p11-issuer{position:absolute;left:42px;top:42px;width:150px;height:58px;background:#fff;border-radius:14px;padding:10px 14px;display:grid;place-items:center;box-shadow:0 16px 40px rgba(0,0,0,.15)}
+.p11-issuer img{max-width:100%;max-height:100%;object-fit:contain!important;background:transparent!important;border-radius:0!important}
+.p11-credentialCode{font-size:48px;line-height:.95;font-weight:800;letter-spacing:-.05em;position:relative}
+.p11-credentialType{margin-top:10px;color:#b9cbd5;font-size:13px;letter-spacing:.08em;text-transform:uppercase;position:relative}
+.p11-credentialMark{position:absolute;right:35px;bottom:26px;font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.18em}
+.p11-b3Visual{background:linear-gradient(145deg,#071927,#113b5a)!important}
+.p11-b3Wordmark{position:absolute;left:42px;top:40px;font-weight:900;font-size:46px;letter-spacing:-.08em;color:#fff}
+.p11-certCopy{padding:56px 58px!important;display:flex;flex-direction:column;justify-content:center}
+.p11-certCopy h3{font-size:46px!important;letter-spacing:-.045em!important;margin:15px 0 14px!important}
+.p11-certCopy p{font-size:17px!important;line-height:1.7!important;max-width:690px}
+.p11-certMeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.p11-certMeta span{border:1px solid #dce3e6;border-radius:999px;padding:7px 10px;font-size:10px;font-weight:800;letter-spacing:.06em;color:#60707a;background:#fafbfb}
+
+/* contact/footer */
+.p11-footer{padding:92px 0 28px!important;background:#05121c!important}
+.p11-contactShell{
+  border:1px solid rgba(255,255,255,.09);border-radius:32px;padding:30px;background:
+  radial-gradient(650px 420px at 85% 0%,rgba(47,126,157,.18),transparent 62%),
+  linear-gradient(145deg,#071927,#06131e);
+  box-shadow:0 34px 110px rgba(0,0,0,.2)
+}
+.p11-contactTop{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:2px 4px 28px;border-bottom:1px solid rgba(255,255,255,.09)}
+.p11-contactEyebrow{font-size:9px;color:#8399a7;text-transform:uppercase;font-weight:850}
+.p11-availability{font-size:11px;color:#aebfc9;display:flex;align-items:center;gap:8px}
+.p11-availability span{width:7px;height:7px;border-radius:50%;background:#62b99f;box-shadow:0 0 0 5px rgba(98,185,159,.08)}
+.p11-contactGrid{display:grid;grid-template-columns:1.12fr .88fr;gap:72px;padding:58px 4px 44px}
+.p11-contactCopy h2{font-size:clamp(46px,6vw,78px);line-height:.94;letter-spacing:-.06em;font-weight:300;margin:0;color:#fff;max-width:740px}
+.p11-contactCopy h2 em{font-style:normal;color:#91c3d5;font-weight:700}
+.p11-contactCopy p{font-size:17px;line-height:1.7;color:#9fb1bd;max-width:650px;margin:28px 0 0}
+.p11-contactTags{display:flex;flex-wrap:wrap;gap:7px;margin-top:26px}
+.p11-contactTags span{border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 10px;font-size:10px;letter-spacing:.06em;color:#bac8d0}
+.p11-contactActions{align-self:end}
+.p11-contactActions a{
+  display:grid;grid-template-columns:1fr auto;gap:3px 18px;padding:19px 4px;border-top:1px solid rgba(255,255,255,.10);
+  transition:padding-left .2s ease,background .2s ease;
+}
+.p11-contactActions a:last-child{border-bottom:1px solid rgba(255,255,255,.10)}
+.p11-contactActions a:hover{padding-left:8px}
+.p11-contactActions small{grid-column:1;color:#7f96a4;font-size:9px;text-transform:uppercase;letter-spacing:.13em}
+.p11-contactActions strong{grid-column:1;color:#eef4f6;font-size:14px;font-weight:650}
+.p11-contactActions b{grid-column:2;grid-row:1/3;align-self:center;color:#8fc2d5;font-size:20px;font-weight:400}
+.p11-contactFoot{display:flex;justify-content:space-between;gap:18px;padding:22px 4px 2px;border-top:1px solid rgba(255,255,255,.09);color:#6f8592;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+
+/* loading/perf-friendly image sizing */
+img{content-visibility:auto}
+.careerBrand img,.regLogo img,.p11-issuer img{transform:translateZ(0)}
+
+@media(max-width:980px){
+  .p11-certHeader{grid-template-columns:1fr;gap:16px}
+  .p11-certPanel{grid-template-columns:1fr!important}
+  .p11-credentialVisual{min-height:310px}
+  .p11-contactGrid{grid-template-columns:1fr;gap:42px}
+}
+@media(max-width:620px){
+  .portrait:after{left:18px!important;bottom:16px!important;font-size:8px!important}
+  .careerBrand img{max-width:66%!important}
+  .careerBrand.itau img{max-width:36%!important}
+  .careerBrand.san img{max-width:52%!important;padding:16px 20px!important}
+  .p11-credentials{padding:82px 0!important}
+  .p11-certStage{border-radius:24px!important}
+  .p11-credentialVisual{min-height:265px;padding:28px}
+  .p11-credentialVisual:before{inset:16px}
+  .p11-issuer{left:28px;top:28px;width:132px;height:52px}
+  .p11-b3Wordmark{left:28px;top:28px}
+  .p11-credentialCode{font-size:42px}
+  .p11-credentialMark{right:26px;bottom:23px}
+  .p11-certCopy{padding:34px 28px 38px!important}
+  .p11-certCopy h3{font-size:38px!important}
+  .p11-contactShell{padding:22px;border-radius:26px}
+  .p11-contactTop{align-items:flex-start;flex-direction:column}
+  .p11-contactGrid{padding:42px 0 34px}
+  .p11-contactCopy h2{font-size:49px}
+  .p11-contactFoot{flex-direction:column;gap:7px}
+}
