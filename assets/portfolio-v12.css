@@ -241,3 +241,85 @@
   .p12-b3Wordmark span{font-size:7px!important}
   .p12-b3Wordmark strong{font-size:34px!important}
 }
+
+
+/* V12.1 — ANBIMA rendering fix + tighter institutional signature */
+.p12-anbimaInstitution{overflow:hidden}
+.p12-anbimaWord{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-width:90px;
+  color:#eef5f7;
+}
+.p12-anbimaWord i{
+  width:17px;height:17px;display:inline-block;position:relative;
+  transform:rotate(45deg);
+  border:2px solid #8fc4d7;
+  border-radius:2px;
+  box-shadow:7px -7px 0 -5px #b89a63;
+}
+.p12-anbimaWord strong{
+  font-size:15px!important;
+  line-height:1!important;
+  letter-spacing:.035em!important;
+  color:#eef5f7!important;
+  font-weight:850!important;
+}
+.p12-anbimaInstitution img{display:none!important}
+
+/* Credential issuer: no remote logo, no white plate, just a crisp institutional signature. */
+.p12-issuerText{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:6px!important;
+}
+.p12-issuerText>span{
+  font-size:8px!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+  color:#7392a3!important;
+  font-weight:850!important;
+}
+.p12-issuerText>strong{
+  font-size:18px!important;
+  line-height:1!important;
+  letter-spacing:.045em!important;
+  color:#f2f6f8!important;
+  font-weight:850!important;
+}
+.p12-issuerText:after{
+  content:"";
+  width:44px;height:2px;
+  margin-top:1px;
+  background:linear-gradient(90deg,#b89a63 0 46%,#79c1d8 46% 100%);
+  border-radius:2px;
+  opacity:.85;
+}
+
+/* Improve visual alignment between regulator identity cards */
+.p12-regInstitution{
+  justify-content:flex-start!important;
+}
+.p12-regInstitution .p12-instMonogram{
+  min-width:74px;
+}
+.p12-anbimaInstitution .p12-anbimaWord{
+  min-width:108px;
+}
+
+/* Make credential header slightly cleaner on phones */
+@media(max-width:620px){
+  .p12-anbimaWord{min-width:78px!important;gap:7px!important}
+  .p12-anbimaWord i{width:14px!important;height:14px!important}
+  .p12-anbimaWord strong{font-size:12.5px!important}
+  .p12-anbimaInstitution .p12-anbimaWord{min-width:84px!important}
+  .p12-regInstitution .p12-instMonogram{min-width:52px!important}
+
+  .p12-issuerText{left:24px!important;top:23px!important;gap:5px!important}
+  .p12-issuerText>span{font-size:7px!important}
+  .p12-issuerText>strong{font-size:15px!important}
+  .p12-issuerText:after{width:38px!important}
+}
