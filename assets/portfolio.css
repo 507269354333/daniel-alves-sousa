@@ -1,0 +1,1510 @@
+/* Daniel Alves Sousa — Portfolio Final Build */
+
+
+:root{--navy:#071a2b;--navy2:#0d2a43;--blue:#1267a8;--cyan:#65b9d6;--paper:#f3f5f7;--ink:#102030;--muted:#657381;--line:#dce3e8;--gold:#c7a363;--green:#0c6f63;--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 28px}.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid #e6ebef}.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.03em}.brand span{color:var(--blue)}.links{display:flex;gap:22px;font-size:12px;align-items:center}.links a{color:#566573}.links a:hover{color:var(--blue)}.navcta{border:1px solid var(--blue);padding:9px 13px;color:var(--blue)!important}.hero{min-height:760px;background:linear-gradient(118deg,#061725 0%,#09243a 63%,#0b3851 100%);color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(155deg,transparent 58%,rgba(89,185,214,.09) 58.2%,transparent 58.5%);pointer-events:none}.heroGrid{min-height:760px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;position:relative;z-index:2}.kicker,.label{font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)}.hero h1{font-size:clamp(58px,8vw,104px);line-height:.9;letter-spacing:-.06em;margin:20px 0 28px;font-weight:300}.hero h1 b{font-weight:800}.heroLead{font-size:clamp(23px,3vw,36px);line-height:1.16;max-width:720px;font-weight:300}.heroText{color:#b9c9d4;max-width:680px;font-size:16px;margin-top:20px}.heroActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}.btn{padding:13px 17px;border:1px solid #70889a;font-size:12px;font-weight:800}.btn.primary{background:#fff;color:var(--navy);border-color:#fff}.portrait{height:610px;position:relative;overflow:hidden}.portrait img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:saturate(.82) contrast(1.04)}.portrait:before{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(90deg,#09243a 0%,transparent 28%),linear-gradient(0deg,#09243a 0%,transparent 28%)}.portrait:after{content:"";display:none;position:absolute;z-index:3;right:22px;bottom:18px;font-size:11px;letter-spacing:.25em;color:#a9c8d8}.now{padding:105px 0}.nowGrid{display:grid;grid-template-columns:.72fr 1.28fr;gap:75px}.display{font-size:clamp(38px,5.4vw,68px);line-height:1.03;letter-spacing:-.045em;font-weight:300;margin:18px 0 34px;max-width:1000px}.nowCopy p{font-size:20px;color:#4f5d68;margin:0 0 18px}.nowCards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d8e0e6;border:1px solid #d8e0e6;margin-top:50px}.nowCard{background:#fff;padding:30px;min-height:230px}.nowCard b{display:block;font-size:23px;margin:65px 0 10px}.nowCard p{color:var(--muted);font-size:14px}.journey{padding:105px 0;background:var(--paper);overflow:hidden}.sectionIntro{max-width:850px}.journeyTabs,.certTabs,.eduTabs,.regTabs{margin-top:42px}.journeyTabs input,.certTabs input,.eduTabs input,.regTabs input{position:absolute;opacity:0;pointer-events:none}.tabRail{display:flex;gap:8px;overflow:auto;padding-bottom:20px;scrollbar-width:none}.tabRail label{white-space:nowrap;border:1px solid #c8d0d6;padding:11px 16px;font-size:12px;font-weight:800;cursor:pointer;background:#fff}.careerStage{position:relative;min-height:510px}.careerPanel{display:none;grid-template-columns:.78fr 1.22fr;min-height:500px;background:#fff;border:1px solid var(--line);overflow:hidden}.careerBrand{position:relative;min-height:500px;display:flex;align-items:center;justify-content:center;padding:55px;overflow:hidden}.careerBrand:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.2);border-radius:50%;right:-80px;bottom:-90px}.careerBrand img{max-width:78%;max-height:150px;object-fit:contain;position:relative;z-index:2}.careerBody{padding:48px}.careerBody .year{color:var(--blue);font-size:12px;font-weight:900;letter-spacing:.15em}.careerBody h3{font-size:42px;line-height:1;margin:12px 0 8px}.careerBody h4{font-size:16px;margin:0 0 26px;color:#62717c}.careerBody p{font-size:17px;color:#4f5d68}.chapter{font-size:11px;letter-spacing:.17em;color:#9a7b46;font-weight:900;text-transform:uppercase}.recognition{margin-top:28px}.recognition summary{cursor:pointer;font-weight:900;color:var(--blue);padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.recognition div{padding:18px 0;color:#596873}.qi{background:#eef5f8}.nano{background:#050708}.san{background:#fff}.itau{background:#ec7000}.stone{background:#effaf6}.careerBrand.itau img{max-width:60%}.careerBrand.nano img{max-width:90%}.careerBrand.qi img{max-width:75%}#j1:checked~.tabRail label[for=j1],#j2:checked~.tabRail label[for=j2],#j3:checked~.tabRail label[for=j3],#j4:checked~.tabRail label[for=j4],#j5:checked~.tabRail label[for=j5]{background:var(--navy);color:#fff;border-color:var(--navy)}#j1:checked~.careerStage .p1,#j2:checked~.careerStage .p2,#j3:checked~.careerStage .p3,#j4:checked~.careerStage .p4,#j5:checked~.careerStage .p5{display:grid}.transitionLine{display:flex;align-items:center;gap:14px;margin-top:28px;color:#78858e;font-size:11px;letter-spacing:.12em;white-space:nowrap}.transitionLine:before,.transitionLine:after{content:"";height:1px;background:#bdc7ce;flex:1}.reg{padding:105px 0;background:var(--navy);color:#fff}.reg .display{max-width:940px}.regLead{font-size:19px;color:#b9c9d4;max-width:800px}.regBrand{display:flex;gap:12px;margin:35px 0}.regLogo{width:175px;height:86px;background:#fff;display:grid;place-items:center;padding:12px;overflow:hidden}.regLogo img{max-width:100%;max-height:100%;object-fit:contain}.regShell{display:grid;grid-template-columns:270px 1fr;border:1px solid #29465b;background:#0b2336}.regNav{padding:16px;border-right:1px solid #29465b}.regNav label{display:block;padding:14px;margin-bottom:7px;border:1px solid #29465b;font-size:12px;font-weight:800;cursor:pointer;color:#c4d1da}.regPanel{display:none;padding:42px}.regPanel h3{font-size:36px;margin:8px 0 18px}.regPanel p{color:#c0cdd5}.regFlow{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:28px}.regStep{padding:18px;border:1px solid #36566d;min-height:120px}.regStep b{display:block;color:#76c3dc;margin-bottom:8px}.regStep span{font-size:13px;color:#b7c7d1}#r1:checked~.regShell .regNav label[for=r1],#r2:checked~.regShell .regNav label[for=r2],#r3:checked~.regShell .regNav label[for=r3],#r4:checked~.regShell .regNav label[for=r4]{background:#fff;color:var(--navy)}#r1:checked~.regShell .rp1,#r2:checked~.regShell .rp2,#r3:checked~.regShell .rp3,#r4:checked~.regShell .rp4{display:block}.credentials{padding:105px 0;background:#eef1f3}.certStage,.eduStage{background:#fff;border:1px solid var(--line);min-height:340px}.certPanel,.eduPanel{display:none;grid-template-columns:320px 1fr;min-height:340px}.sealSide{background:linear-gradient(145deg,#071a2b,#0e3855);display:flex;align-items:center;justify-content:center;padding:35px}.sealCard{background:#fff;width:220px;min-height:175px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;box-shadow:0 18px 45px rgba(0,0,0,.2)}.sealCard img{width:155px;height:60px;object-fit:cover;object-position:center;margin-bottom:15px}.sealCard b{font-size:26px}.certCopy,.eduCopy{padding:45px}.certCopy h3,.eduCopy h3{font-size:38px;margin:7px 0 15px}.certCopy p,.eduCopy p{color:#5a6873;font-size:17px}.status{display:inline-block;background:#e8f3ef;color:#0b6d5f;padding:6px 9px;font-size:11px;font-weight:900;letter-spacing:.1em}#c1:checked~.tabRail label[for=c1],#c2:checked~.tabRail label[for=c2],#c3:checked~.tabRail label[for=c3],#c4:checked~.tabRail label[for=c4]{background:var(--navy);color:#fff}#c1:checked~.certStage .cp1,#c2:checked~.certStage .cp2,#c3:checked~.certStage .cp3,#c4:checked~.certStage .cp4{display:grid}.education{padding:105px 0}.eduPanel{grid-template-columns:.65fr 1.35fr}.eduVisual{background:#0d3b35;color:#fff;padding:45px;display:flex;flex-direction:column;justify-content:flex-end}.eduVisual strong{font-size:42px;line-height:1}.courseList{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.course{border-top:1px solid var(--line);padding:13px 0;font-size:13px;color:#596873}#e1:checked~.tabRail label[for=e1],#e2:checked~.tabRail label[for=e2],#e3:checked~.tabRail label[for=e3]{background:var(--navy);color:#fff}#e1:checked~.eduStage .ep1,#e2:checked~.eduStage .ep2,#e3:checked~.eduStage .ep3{display:grid}.footer{background:#061725;color:#fff;padding:90px 0 28px}.footerGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px}.footer .display{font-size:52px}.footer p{color:#aebfca}.footerLinks a{display:flex;justify-content:space-between;border-top:1px solid #29465b;padding:16px 0}.footerLinks a:last-child{border-bottom:1px solid #29465b}.fine{margin-top:65px;padding-top:22px;border-top:1px solid #203a4e;color:#6f899b;font-size:11px}
+@media(max-width:850px){.heroGrid,.nowGrid,.careerPanel,.regShell,.certPanel,.eduPanel,.footerGrid{grid-template-columns:1fr}.heroGrid{gap:0}.portrait{height:430px;order:-1;margin:0 -28px}.portrait:before{background:linear-gradient(0deg,#09243a 0%,transparent 35%)}.heroCopy{padding:50px 0 70px}.nowGrid{gap:20px}.nowCards{grid-template-columns:1fr}.careerBrand{min-height:250px}.careerPanel{min-height:0}.regNav{border-right:0;border-bottom:1px solid #29465b;display:flex;overflow:auto;gap:7px}.regNav label{min-width:190px}.regFlow{grid-template-columns:1fr 1fr}.sealSide{min-height:250px}.courseList{grid-template-columns:1fr}.links a:not(.navcta){display:none}}@media(max-width:560px){.wrap{padding:0 20px}.hero h1{font-size:55px}.display{font-size:40px}.now,.journey,.reg,.credentials,.education,.footer{padding:72px 0}.careerBody,.regPanel,.certCopy,.eduCopy{padding:28px 24px}.careerBody h3{font-size:34px}.regFlow{grid-template-columns:1fr}.footer .display{font-size:40px}.regLogo{width:145px}.tabRail{margin-right:-20px}.portrait{margin:0 -20px}}
+
+
+
+@media(max-width:850px){
+  .journey{padding-top:72px}
+  .tabRail{scroll-snap-type:x mandatory;gap:10px;padding-right:42px}
+  .tabRail label{scroll-snap-align:start}
+  .careerStage{min-height:0}
+  .careerBrand{min-height:205px;padding:32px}
+  .careerBrand img{max-height:105px}
+  .careerBody{padding:32px 28px 38px}
+  .careerBody h3{font-size:36px}
+  .careerBody p{font-size:16px}
+  .regLogo{width:145px;height:74px}
+  .certStage,.eduStage{min-height:0}
+}
+@media(max-width:560px){
+  .portrait{height:360px}
+  .careerBrand{min-height:185px}
+  .careerBody{padding:28px 24px 34px}
+  .careerBody h3{font-size:34px}
+  .sealSide{min-height:215px}
+  .sealCard{min-height:155px}
+}
+
+
+
+:root{
+  --v91-shadow:0 28px 80px rgba(3,18,38,.14);
+  --v91-line:rgba(11,42,74,.11);
+  --v91-glow:rgba(37,123,154,.18);
+}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+.hero,.journey,.regulation,.certifications,.education{position:relative}
+.hero:after{
+  content:"";position:absolute;right:-12vw;bottom:-24vw;width:52vw;height:52vw;
+  border-radius:50%;background:radial-gradient(circle,var(--v91-glow),transparent 68%);
+  pointer-events:none;filter:blur(8px)
+}
+/* Career rail: clear interaction and stronger current chapter */
+.tabRail{
+  position:relative;display:flex;overflow-x:auto;scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;padding:5px 28px 14px 2px;
+  mask-image:linear-gradient(90deg,#000 0,#000 90%,transparent 100%);
+}
+.tabRail::-webkit-scrollbar{display:none}
+.tabRail label{
+  flex:0 0 auto;transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+  cursor:pointer;user-select:none
+}
+.tabRail label:active{transform:scale(.97)}
+.tabRail label:first-of-type{box-shadow:0 8px 28px rgba(7,49,86,.13)}
+.careerStage{
+  border-radius:28px;overflow:hidden;box-shadow:var(--v91-shadow);
+  border:1px solid var(--v91-line);transition:transform .35s ease,box-shadow .35s ease
+}
+.careerStage:hover{transform:translateY(-3px);box-shadow:0 34px 90px rgba(3,18,38,.18)}
+.careerBrand{position:relative;overflow:hidden}
+.careerBrand:after{
+  content:"";position:absolute;inset:auto -10% -45% 35%;height:70%;
+  background:radial-gradient(circle,rgba(255,255,255,.16),transparent 68%);
+  pointer-events:none
+}
+.careerBrand img{
+  filter:none!important;object-fit:contain;mix-blend-mode:normal;
+  border-radius:22px;box-shadow:0 14px 36px rgba(0,0,0,.12)
+}
+.careerBody{position:relative}
+.careerBody:before{
+  content:"CAPÍTULO PROFISSIONAL";display:block;margin-bottom:12px;
+  font-size:10px;font-weight:800;letter-spacing:.18em;opacity:.5
+}
+/* certification cards */
+.sealCard,.certStage,.eduStage{
+  border-radius:26px!important;border:1px solid var(--v91-line)!important;
+  box-shadow:0 20px 60px rgba(3,18,38,.09);overflow:hidden
+}
+.sealCard{transition:transform .22s ease,box-shadow .22s ease}
+.sealCard:hover{transform:translateY(-3px);box-shadow:0 25px 70px rgba(3,18,38,.14)}
+.sealCard img,.regLogo img{object-fit:contain}
+.regLogo{
+  border-radius:18px!important;background:#fff!important;padding:12px!important;
+  box-shadow:0 12px 34px rgba(3,18,38,.09)
+}
+/* tactile affordance */
+label,summary,a,button{ -webkit-tap-highlight-color:rgba(30,101,137,.12) }
+details summary{cursor:pointer}
+footer{position:relative;overflow:hidden}
+footer:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,rgba(255,255,255,.025),transparent 38%)
+}
+@media(max-width:850px){
+  .hero{min-height:auto}
+  .portrait{border-radius:28px;overflow:hidden;box-shadow:0 24px 70px rgba(3,18,38,.18)}
+  .tabRail{gap:10px;padding-right:58px;scroll-snap-type:x mandatory}
+  .tabRail label{scroll-snap-align:start}
+  .careerStage{border-radius:22px}
+  .careerBrand{min-height:190px!important;padding:28px!important}
+  .careerBrand img{max-height:100px!important;max-width:78%!important}
+  .careerBody{padding:28px 24px 34px!important}
+  .careerBody h3{font-size:34px!important;line-height:1.02!important}
+  .careerBody p{font-size:16px!important;line-height:1.62!important}
+  .regLogo{width:140px!important;height:72px!important}
+  .certStage,.eduStage{min-height:0!important}
+}
+@media(max-width:560px){
+  .portrait{height:350px!important}
+  .careerBrand{min-height:170px!important}
+  .careerBody{padding:26px 21px 32px!important}
+  .careerBody h3{font-size:31px!important}
+  .sealSide{min-height:205px!important}
+  .sealCard{min-height:150px!important}
+}
+
+
+
+/* V9.2 — somente refinamento de marcas institucionais */
+.careerBrand img{
+  background:#fff;
+  padding:clamp(16px,3vw,34px);
+  width:min(72%,560px)!important;
+  max-height:150px!important;
+  object-fit:contain!important;
+  border-radius:22px!important;
+  box-shadow:0 18px 46px rgba(4,24,45,.10)!important;
+}
+.regLogo{
+  min-height:92px;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  background:#fff!important;
+  padding:14px 18px!important;
+  border:1px solid rgba(7,39,68,.08)!important;
+  box-shadow:0 16px 42px rgba(2,20,39,.12)!important;
+}
+.regLogo img{
+  width:100%!important;
+  height:66px!important;
+  max-width:240px!important;
+  object-fit:contain!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:#fff!important;
+}
+.sealCard img,.sealSide img{
+  object-fit:contain!important;
+  background:#fff!important;
+  border-radius:14px!important;
+}
+@media(max-width:560px){
+  .careerBrand img{
+    width:min(78%,430px)!important;
+    max-height:118px!important;
+    padding:18px!important;
+  }
+  .regLogo{min-height:82px;padding:12px!important}
+  .regLogo img{height:54px!important;max-width:205px!important}
+}
+
+
+
+/* V9.3 — cards profissionais aprovados */
+.careerStage{
+  border-radius:26px!important;
+  background:#fff!important;
+  overflow:hidden!important;
+  border:1px solid rgba(9,39,67,.10)!important;
+  box-shadow:0 22px 60px rgba(3,25,47,.10)!important;
+}
+.careerBrand{
+  min-height:250px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:34px!important;
+}
+.careerBrand img{
+  width:min(76%,560px)!important;
+  max-height:145px!important;
+  object-fit:contain!important;
+  padding:24px!important;
+  background:#fff!important;
+  border-radius:28px!important;
+  box-shadow:0 16px 42px rgba(3,25,47,.10)!important;
+}
+.careerBody{
+  background:#fff!important;
+  padding:42px 40px 44px!important;
+}
+.careerBody:before{
+  content:"CAPÍTULO PROFISSIONAL"!important;
+  display:block!important;
+  margin:0 0 18px!important;
+  font-size:11px!important;
+  line-height:1!important;
+  font-weight:800!important;
+  letter-spacing:.20em!important;
+  color:#8c98a3!important;
+}
+.careerBody h3{
+  margin-top:12px!important;
+  font-size:clamp(38px,5vw,58px)!important;
+  letter-spacing:-.035em!important;
+}
+.careerBody p{max-width:760px}
+.tabRail label{
+  min-height:72px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:0 30px!important;
+  border-radius:0!important;
+  font-weight:800!important;
+}
+@media(max-width:850px){
+  .careerBrand{min-height:260px!important;padding:34px 24px!important}
+  .careerBrand img{width:min(76%,430px)!important;max-height:130px!important}
+  .careerBody{padding:42px 40px 48px!important}
+}
+@media(max-width:560px){
+  .careerStage{border-radius:24px!important}
+  .careerBrand{min-height:255px!important;padding:30px 20px!important}
+  .careerBrand img{
+    width:min(78%,410px)!important;
+    max-height:122px!important;
+    padding:20px!important;
+    border-radius:25px!important;
+  }
+  .careerBody{padding:40px 39px 46px!important}
+  .careerBody h3{font-size:42px!important}
+  .careerBody p{font-size:18px!important;line-height:1.72!important}
+  .tabRail label{min-height:78px!important;padding:0 30px!important}
+}
+
+
+
+/* Remove o rótulo sobre a foto */
+.portrait:after{content:none!important;display:none!important}
+
+/* Trajetória: layout final */
+.careerStage{
+  min-height:0!important;
+  border-radius:28px!important;
+  overflow:hidden!important;
+  box-shadow:0 24px 70px rgba(5,29,50,.11)!important;
+}
+.careerPanel{
+  min-height:0!important;
+  grid-template-columns:minmax(300px,.82fr) minmax(0,1.28fr)!important;
+  border:0!important;
+}
+.careerBrand{
+  min-height:560px!important;
+  padding:54px 36px!important;
+}
+.careerBrand img{
+  width:auto!important;
+  max-width:78%!important;
+  height:auto!important;
+  max-height:150px!important;
+  object-fit:contain!important;
+  position:relative!important;
+  z-index:2!important;
+  border-radius:26px!important;
+  box-shadow:0 18px 48px rgba(3,24,43,.12)!important;
+}
+/* Marca integrada: sem “caixa dentro da caixa” na Nano */
+.careerBrand.nano img{
+  max-width:82%!important;
+  background:transparent!important;
+  padding:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.careerBrand.san{background:#e30613!important}
+.careerBrand.san img{
+  background:#fff!important;
+  padding:24px 30px!important;
+}
+.careerBrand.itau{background:#ec7000!important}
+.careerBrand.itau img{
+  max-width:46%!important;
+  padding:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.careerBrand.stone{background:#eaf9f3!important}
+.careerBrand.stone img{
+  background:transparent!important;
+  padding:0!important;
+  box-shadow:none!important;
+}
+.careerBody{
+  padding:48px 48px 42px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+}
+.careerBody:before{display:none!important}
+.careerBody .chapter{margin-bottom:7px!important}
+.careerBody h3{font-size:44px!important;margin:11px 0 8px!important}
+.careerBody h4{font-size:17px!important;margin-bottom:25px!important}
+.careerBody p{font-size:17px!important;line-height:1.58!important;margin:0 0 14px!important}
+
+.careerHighlights{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  margin-top:22px;
+  padding-top:22px;
+  border-top:1px solid #e2e7eb;
+}
+.careerHighlight{
+  min-height:66px;
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding:5px 16px;
+  color:#526473;
+  font-size:12px;
+  line-height:1.25;
+  border-right:1px solid #e2e7eb;
+}
+.careerHighlight:first-child{padding-left:0}
+.careerHighlight:last-child{border-right:0}
+.hiIcon{
+  flex:0 0 30px;
+  width:30px;height:30px;
+  display:grid;place-items:center;
+  font-size:25px;font-weight:800;
+  color:#1680b6;
+}
+.p2 .hiIcon{color:#12a878}.p3 .hiIcon{color:#e30613}.p4 .hiIcon{color:#ec7000}.p5 .hiIcon{color:#00a868}
+.recognition{margin-top:18px!important}
+
+/* Mobile final — breakpoint amplo para funcionar também com zoom/tela desktop no Android */
+@media(max-width:1180px){
+  .journey{padding:76px 0!important}
+  .journey .wrap{width:min(92%,900px)!important}
+  .tabRail{
+    overflow-x:auto!important;
+    gap:10px!important;
+    padding:0 44px 16px 0!important;
+    scroll-snap-type:x mandatory!important;
+    mask-image:linear-gradient(90deg,#000 0,#000 91%,transparent 100%)!important;
+  }
+  .tabRail label{
+    flex:0 0 auto!important;
+    min-height:66px!important;
+    padding:0 26px!important;
+    font-size:13px!important;
+    scroll-snap-align:start!important;
+  }
+  .careerPanel{
+    grid-template-columns:1fr!important;
+  }
+  .careerBrand{
+    min-height:270px!important;
+    padding:34px 24px!important;
+  }
+  .careerBrand:after{width:210px!important;height:210px!important}
+  .careerBrand img{
+    max-width:70%!important;
+    max-height:125px!important;
+  }
+  .careerBrand.nano img{max-width:66%!important}
+  .careerBrand.itau img{max-width:34%!important}
+  .careerBody{
+    padding:42px 40px 44px!important;
+  }
+  .careerBody h3{font-size:42px!important}
+  .careerBody p{font-size:18px!important;line-height:1.65!important}
+}
+@media(max-width:620px){
+  .journey{padding:64px 0!important}
+  .journey .wrap{width:90%!important}
+  .sectionIntro .display{font-size:42px!important;line-height:1.06!important}
+  .tabRail label{min-height:72px!important;font-size:14px!important;padding:0 28px!important}
+  .careerStage{border-radius:24px!important}
+  .careerBrand{min-height:255px!important}
+  .careerBrand img{max-width:76%!important;max-height:118px!important}
+  .careerBrand.nano img{max-width:72%!important}
+  .careerBrand.itau img{max-width:38%!important}
+  .careerBody{padding:40px 38px 42px!important}
+  .careerBody h3{font-size:41px!important}
+  .careerBody h4{font-size:18px!important}
+  .careerHighlights{grid-template-columns:1fr!important;margin-top:18px!important}
+  .careerHighlight{
+    border-right:0!important;
+    border-bottom:1px solid #edf0f2;
+    padding:11px 0!important;
+    min-height:54px!important;
+    font-size:13px!important;
+  }
+  .careerHighlight:last-child{border-bottom:0}
+}
+
+
+
+/* Portfolio V10 — executive editorial system */
+:root{
+  --p10-ink:#071521;
+  --p10-ink-2:#0d2333;
+  --p10-blue:#0b4f75;
+  --p10-blue-2:#0f6f98;
+  --p10-paper:#f6f7f5;
+  --p10-paper-2:#eef2f3;
+  --p10-muted:#64717c;
+  --p10-line:rgba(7,21,33,.12);
+  --p10-gold:#b89a63;
+  --p10-white:#fff;
+  --p10-shadow:0 26px 90px rgba(3,20,35,.10);
+  --p10-radius:28px;
+}
+html{scroll-padding-top:92px}
+body{
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important;
+  color:var(--p10-ink);
+  background:var(--p10-white);
+  text-rendering:optimizeLegibility;
+}
+::selection{background:rgba(11,79,117,.16)}
+.wrap{max-width:1220px!important}
+
+/* scroll progress */
+.p10-progress{position:fixed;left:0;top:0;width:100%;height:2px;z-index:120;pointer-events:none}
+.p10-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p10-gold),#d8c394);transition:width .08s linear}
+
+/* navigation */
+.nav{
+  height:auto!important;
+  background:rgba(250,251,250,.88)!important;
+  border-bottom:1px solid rgba(7,21,33,.08)!important;
+  backdrop-filter:blur(18px) saturate(145%)!important;
+  -webkit-backdrop-filter:blur(18px) saturate(145%)!important;
+}
+.navin{height:76px!important;gap:28px;position:relative}
+.brand{
+  font-size:13px!important;
+  letter-spacing:.08em!important;
+  white-space:nowrap;
+}
+.brand span{color:var(--p10-blue)!important}
+.p10-navActions{display:flex;align-items:center;gap:8px;margin-left:auto}
+.p10-navBtn,.p10-menuBtn{
+  appearance:none;border:0;background:transparent;color:#52616d;
+  min-height:42px;padding:0 14px;font:inherit;font-size:12px;font-weight:800;
+  letter-spacing:.03em;cursor:pointer;border-radius:999px;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.p10-navBtn:hover,.p10-menuBtn:hover{background:#edf2f4;color:var(--p10-ink)}
+.p10-navBtn:active,.p10-menuBtn:active{transform:scale(.97)}
+.p10-navBtn svg,.p10-menuBtn svg{width:16px;height:16px;vertical-align:-3px;margin-left:5px}
+.p10-contact{
+  display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 17px;
+  border:1px solid rgba(7,21,33,.15);border-radius:999px;font-size:12px;font-weight:850;
+  color:var(--p10-ink)!important;background:#fff;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.p10-contact:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(3,20,35,.08);border-color:rgba(11,79,117,.35)}
+.p10-menuBtn{display:none}
+.p10-explore{
+  position:absolute;right:0;top:64px;width:min(720px,calc(100vw - 56px));
+  background:rgba(255,255,255,.98);border:1px solid rgba(7,21,33,.09);border-radius:24px;
+  box-shadow:0 30px 90px rgba(3,20,35,.16);padding:12px;opacity:0;transform:translateY(-8px) scale(.99);
+  pointer-events:none;transition:opacity .2s ease,transform .2s ease;
+}
+.p10-explore.is-open{opacity:1;transform:none;pointer-events:auto}
+.p10-exploreGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#e9eef0;border-radius:17px;overflow:hidden}
+.p10-exploreCol{background:#fff;padding:22px}
+.p10-exploreEyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:#8a969f;font-weight:900;margin-bottom:10px}
+.p10-explore a{display:block;padding:8px 0;color:#344956;font-size:13px;transition:color .18s ease,transform .18s ease}
+.p10-explore a:hover{color:var(--p10-blue);transform:translateX(2px)}
+.p10-mobilePanel{display:none}
+
+/* hero */
+.hero{
+  min-height:790px!important;
+  background:
+    radial-gradient(700px 520px at 83% 22%,rgba(30,121,158,.18),transparent 63%),
+    linear-gradient(118deg,#05131f 0%,#082137 56%,#0b3246 100%)!important;
+}
+.heroGrid{min-height:790px!important;gap:70px!important}
+.heroCopy{max-width:740px}
+.hero .kicker{color:#8bc4d8!important}
+.hero h1{font-size:clamp(62px,7.4vw,104px)!important;max-width:850px}
+.heroLead{max-width:770px!important}
+.heroText{font-size:16px!important;line-height:1.72!important;color:#b8c6cf!important}
+.p10-heroMeta{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.p10-pill{
+  display:inline-flex;align-items:center;gap:7px;min-height:34px;padding:0 12px;
+  border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#d8e2e8;font-size:11px;font-weight:750;
+  background:rgba(255,255,255,.035)
+}
+.p10-pill:before{content:"";width:5px;height:5px;border-radius:50%;background:#7bc3dc;box-shadow:0 0 0 4px rgba(123,195,220,.08)}
+.heroActions{margin-top:32px!important}
+.btn{border-radius:999px!important;padding:13px 18px!important;transition:transform .2s ease,background .2s ease,border-color .2s ease!important}
+.btn:hover{transform:translateY(-2px)}
+.portrait{border-radius:34px 34px 0 34px;box-shadow:0 34px 100px rgba(0,0,0,.18)}
+.portrait:before{background:linear-gradient(90deg,#082137 0%,transparent 24%),linear-gradient(0deg,#082137 0%,transparent 22%)!important}
+
+/* current section */
+.now{padding:118px 0!important}
+.now .display{max-width:900px}
+.nowGrid{align-items:start}
+.nowCopy{max-width:760px}
+.nowCards{gap:14px!important;background:transparent!important;border:0!important;margin-top:58px!important}
+.nowCard{
+  border:1px solid var(--p10-line);border-radius:22px!important;padding:28px!important;min-height:245px!important;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.nowCard:hover{transform:translateY(-5px);box-shadow:0 22px 60px rgba(3,20,35,.08);border-color:rgba(11,79,117,.24)}
+.nowCard b{margin:58px 0 10px!important;letter-spacing:-.02em}
+
+/* Expertise */
+.p10-expertise{padding:118px 0;background:var(--p10-paper)}
+.p10-sectionHead{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:end;margin-bottom:48px}
+.p10-sectionHead .display{margin-bottom:0}
+.p10-sectionCopy{font-size:18px;line-height:1.7;color:#586873;max-width:650px;margin:0 0 7px}
+.p10-expertiseGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.p10-expertiseCard{
+  position:relative;min-height:280px;padding:31px;border:1px solid var(--p10-line);border-radius:26px;background:#fff;overflow:hidden;
+  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+.p10-expertiseCard:before{
+  content:attr(data-index);position:absolute;right:26px;top:22px;font-size:12px;letter-spacing:.12em;color:#a2adb4;font-weight:800;
+}
+.p10-expertiseCard:hover{transform:translateY(-5px);box-shadow:var(--p10-shadow);border-color:rgba(11,79,117,.22)}
+.p10-expertiseIcon{width:46px;height:46px;border-radius:14px;background:#edf4f7;display:grid;place-items:center;color:var(--p10-blue);font-size:20px;margin-bottom:58px}
+.p10-expertiseCard h3{font-size:28px;letter-spacing:-.03em;margin:0 0 10px}
+.p10-expertiseCard p{max-width:540px;color:#657681;margin:0;line-height:1.64}
+.p10-cardLine{height:1px;background:linear-gradient(90deg,var(--p10-gold),transparent);width:0;margin-top:25px;transition:width .35s ease}
+.p10-expertiseCard:hover .p10-cardLine{width:100%}
+
+/* Journey refinements */
+.journey{padding:118px 0!important;background:#f2f4f5!important}
+.journey .sectionIntro{max-width:920px!important}
+.tabRail label{border-radius:999px!important;min-height:48px!important;padding:0 20px!important;border-color:rgba(7,21,33,.13)!important}
+#j1:checked~.tabRail label[for=j1],#j2:checked~.tabRail label[for=j2],#j3:checked~.tabRail label[for=j3],#j4:checked~.tabRail label[for=j4],#j5:checked~.tabRail label[for=j5]{background:var(--p10-ink)!important}
+.careerStage{box-shadow:0 30px 85px rgba(3,20,35,.10)!important}
+.careerBody h3{letter-spacing:-.035em!important}
+
+/* Focus / interests */
+.p10-focus{padding:118px 0;background:#fff}
+.p10-focusShell{display:grid;grid-template-columns:.78fr 1.22fr;gap:16px;align-items:stretch}
+.p10-focusNav{
+  border:1px solid var(--p10-line);border-radius:26px;padding:12px;background:var(--p10-paper);display:flex;flex-direction:column;gap:7px
+}
+.p10-focusCard{
+  appearance:none;border:0;background:transparent;text-align:left;border-radius:17px;padding:17px 18px;cursor:pointer;
+  color:#5b6b76;font:inherit;font-size:14px;font-weight:750;display:flex;align-items:center;justify-content:space-between;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.p10-focusCard span{opacity:.5;font-size:12px}
+.p10-focusCard:hover{background:#fff;color:var(--p10-ink)}
+.p10-focusCard.is-active{background:var(--p10-ink);color:#fff;transform:translateX(2px)}
+.p10-focusDetail{
+  min-height:470px;border-radius:26px;background:
+    radial-gradient(600px 420px at 90% 10%,rgba(35,126,157,.18),transparent 60%),
+    var(--p10-ink);color:#fff;padding:52px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden
+}
+.p10-focusDetail:before{content:"";position:absolute;inset:30px;border:1px solid rgba(255,255,255,.08);border-radius:20px;pointer-events:none}
+.p10-focusNo{font-size:11px;letter-spacing:.18em;color:#8fb8c9;font-weight:850;text-transform:uppercase;margin-bottom:auto;position:relative}
+.p10-focusDetail h3{font-size:clamp(40px,5vw,66px);line-height:.95;letter-spacing:-.05em;margin:0 0 18px;position:relative}
+.p10-focusDetail p{max-width:690px;color:#becbd3;font-size:17px;line-height:1.7;margin:0;position:relative}
+.p10-focusTags{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px;position:relative}
+.p10-focusTags span{border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 10px;font-size:10px;letter-spacing:.08em;color:#d6e0e5}
+
+/* regulation */
+.reg{padding:118px 0!important;background:#061725!important}
+.regShell{border-radius:26px;overflow:hidden}
+.regNav label{border-radius:13px!important}
+.regPanel{min-height:430px}
+.regStep{border-radius:15px}
+.regLogo{border-radius:17px!important}
+
+/* credentials / education */
+.credentials,.education{padding:118px 0!important}
+.certStage,.eduStage{border-radius:26px!important;box-shadow:0 22px 65px rgba(3,20,35,.08)!important}
+.sealCard{border-radius:20px!important}
+.status{border-radius:999px;padding:7px 10px!important}
+.eduVisual{border-radius:0!important}
+
+/* footer */
+.footer{padding:100px 0 32px!important;background:#05131f!important}
+.footerLinks a{transition:padding-left .2s ease,color .2s ease}
+.footerLinks a:hover{padding-left:7px;color:#fff}
+
+/* reveal motion */
+.p10-reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.p10-reveal.is-visible{opacity:1;transform:none}
+.p10-reveal:nth-child(2){transition-delay:.05s}
+.p10-reveal:nth-child(3){transition-delay:.10s}
+.p10-reveal:nth-child(4){transition-delay:.15s}
+.p10-active-dot{position:relative}
+.p10-active-dot:after{content:"";position:absolute;left:50%;bottom:-13px;width:4px;height:4px;border-radius:50%;background:var(--p10-gold);transform:translateX(-50%)}
+
+@media(max-width:980px){
+  .p10-sectionHead{grid-template-columns:1fr;gap:15px}
+  .p10-focusShell{grid-template-columns:1fr}
+  .p10-focusNav{display:grid;grid-template-columns:repeat(3,1fr)}
+  .p10-focusDetail{min-height:410px}
+}
+@media(max-width:850px){
+  .p10-navBtn,.p10-contact{display:none!important}
+  .p10-menuBtn{display:inline-flex;align-items:center!important}
+  .p10-explore{display:none!important}
+  .p10-mobilePanel{
+    display:block;position:fixed;inset:76px 0 auto 0;max-height:calc(100vh - 76px);overflow:auto;
+    background:rgba(250,251,250,.98);backdrop-filter:blur(18px);padding:18px 24px 28px;
+    border-bottom:1px solid var(--p10-line);opacity:0;transform:translateY(-12px);pointer-events:none;
+    transition:opacity .2s ease,transform .2s ease
+  }
+  .p10-mobilePanel.is-open{opacity:1;transform:none;pointer-events:auto}
+  .p10-mobilePanel a{display:flex!important;align-items:center;justify-content:space-between;padding:15px 2px;border-bottom:1px solid #e7ebed;color:#394c58;font-size:14px;font-weight:760}
+  .heroGrid{grid-template-columns:1fr!important;padding-top:30px}
+  .heroCopy{padding-bottom:74px!important}
+  .portrait{border-radius:0 0 28px 28px!important}
+  .p10-expertiseGrid{grid-template-columns:1fr}
+  .p10-focusNav{grid-template-columns:repeat(2,1fr)}
+  .p10-focusDetail{padding:38px}
+  .nowCards{grid-template-columns:1fr!important}
+}
+@media(max-width:560px){
+  .wrap{padding-left:20px!important;padding-right:20px!important}
+  .navin{height:70px!important}
+  .brand{font-size:11px!important}
+  .p10-mobilePanel{inset:70px 0 auto 0;max-height:calc(100vh - 70px)}
+  .hero{min-height:auto!important}
+  .heroGrid{min-height:auto!important}
+  .hero h1{font-size:54px!important;line-height:.92!important}
+  .heroLead{font-size:25px!important}
+  .p10-heroMeta{gap:7px}
+  .p10-pill{font-size:10px}
+  .p10-expertise,.p10-focus,.now,.journey,.reg,.credentials,.education{padding:82px 0!important}
+  .p10-expertiseCard{min-height:255px;padding:25px}
+  .p10-expertiseIcon{margin-bottom:46px}
+  .p10-focusNav{grid-template-columns:1fr}
+  .p10-focusCard{padding:15px 16px}
+  .p10-focusDetail{min-height:420px;padding:34px 28px}
+  .p10-focusDetail:before{inset:18px}
+  .p10-focusDetail h3{font-size:46px}
+  .p10-focusDetail p{font-size:15px}
+  .careerBody{padding:36px 28px 40px!important}
+  .careerBody h3{font-size:38px!important}
+  .regPanel{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+  .p10-reveal{opacity:1!important;transform:none!important}
+}
+
+
+
+/* Portfolio V11 — institutional polish */
+:root{
+  --p11-ink:#06131e;
+  --p11-ink-soft:#0c2232;
+  --p11-blue:#0a4d70;
+  --p11-blue-light:#8ec1d2;
+  --p11-paper:#f7f8f6;
+  --p11-line:rgba(6,19,30,.10);
+  --p11-gold:#b69a67;
+  --p11-shadow:0 28px 90px rgba(2,18,31,.12);
+}
+body{font-family:"Segoe UI Variable","Segoe UI",Inter,Arial,sans-serif!important;letter-spacing:-.005em}
+.display,h1,h2,h3{font-feature-settings:"kern" 1,"liga" 1;text-wrap:balance}
+.display{letter-spacing:-.052em!important}
+.label,.kicker,.chapter,.p11-sectionKicker,.p11-contactEyebrow{letter-spacing:.17em!important}
+p{letter-spacing:0}
+
+/* portrait: editorial rather than boxed photo */
+.portrait{
+  border-radius:36px 36px 4px 36px!important;
+  box-shadow:0 38px 120px rgba(0,0,0,.23)!important;
+  isolation:isolate;
+}
+.portrait img{
+  filter:saturate(.72) contrast(1.06) brightness(.97)!important;
+  transform:scale(1.012);
+}
+.portrait:before{
+  background:
+    linear-gradient(90deg,rgba(7,26,43,.9) 0%,rgba(7,26,43,.25) 24%,transparent 47%),
+    linear-gradient(0deg,rgba(7,26,43,.92) 0%,rgba(7,26,43,.18) 31%,transparent 55%)!important;
+}
+.portrait:after{
+  content:"DAS · MERCADO DE CAPITAIS"!important;display:block!important;
+  position:absolute;left:24px;right:auto;bottom:22px;z-index:4;
+  color:rgba(255,255,255,.72)!important;font-size:9px!important;letter-spacing:.22em!important;
+}
+
+/* institutional marks */
+.careerBrand{position:relative!important}
+.careerBrand:before{
+  content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.16);
+  border-radius:22px;pointer-events:none;
+}
+.careerBrand img{
+  width:auto!important;height:auto!important;max-height:128px!important;max-width:62%!important;
+  object-fit:contain!important;border-radius:0!important;box-shadow:none!important;
+  background:transparent!important;padding:0!important;
+}
+.careerBrand.qi{background:linear-gradient(145deg,#eef4f7,#dce9ef)!important}
+.careerBrand.qi:before,.careerBrand.stone:before{border-color:rgba(7,38,53,.08)}
+.careerBrand.qi img{max-width:56%!important}
+.careerBrand.nano{background:#060708!important}
+.careerBrand.nano img{max-width:68%!important}
+.careerBrand.san{background:linear-gradient(145deg,#e30613,#c90310)!important}
+.careerBrand.san img{max-width:48%!important;background:#fff!important;padding:20px 28px!important;border-radius:18px!important}
+.careerBrand.itau{background:linear-gradient(145deg,#ef7600,#d96100)!important}
+.careerBrand.itau img{max-width:32%!important}
+.careerBrand.stone{background:linear-gradient(145deg,#eaf9f3,#d8f1e7)!important}
+.careerBrand.stone img{max-width:48%!important}
+.regLogo img{filter:saturate(.92);max-height:58px!important}
+
+/* credentials */
+.p11-credentials{background:#f2f4f4!important;position:relative;overflow:hidden}
+.p11-credentials:before{
+  content:"";position:absolute;width:540px;height:540px;border-radius:50%;right:-210px;top:-180px;
+  background:radial-gradient(circle,rgba(11,91,126,.10),transparent 68%);pointer-events:none
+}
+.p11-sectionKicker{font-size:10px;text-transform:uppercase;font-weight:900;color:#8a979f;margin-bottom:14px}
+.p11-certHeader{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;margin-bottom:36px}
+.p11-certHeader .display{margin-bottom:0}
+.p11-certHeader>p{font-size:17px;line-height:1.72;color:#63717a;margin:0 0 8px}
+.p11-credentialRail{margin-top:0!important}
+.p11-credentialRail label{min-height:52px!important;border-radius:999px!important}
+.p11-certStage{border-radius:30px!important;background:#fff!important;box-shadow:var(--p11-shadow)!important;min-height:400px!important}
+.p11-certPanel{grid-template-columns:390px 1fr!important;min-height:400px!important;border:0!important}
+.p11-credentialVisual{
+  position:relative;min-height:400px;padding:42px;display:flex;flex-direction:column;justify-content:flex-end;
+  background:
+    radial-gradient(460px 320px at 85% 12%,rgba(119,194,216,.16),transparent 60%),
+    linear-gradient(145deg,#06131e,#0b2b41 72%,#0d3c54);
+  color:#fff;overflow:hidden;
+}
+.p11-credentialVisual:before{
+  content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.09);border-radius:22px
+}
+.p11-issuer{position:absolute;left:42px;top:42px;width:150px;height:58px;background:#fff;border-radius:14px;padding:10px 14px;display:grid;place-items:center;box-shadow:0 16px 40px rgba(0,0,0,.15)}
+.p11-issuer img{max-width:100%;max-height:100%;object-fit:contain!important;background:transparent!important;border-radius:0!important}
+.p11-credentialCode{font-size:48px;line-height:.95;font-weight:800;letter-spacing:-.05em;position:relative}
+.p11-credentialType{margin-top:10px;color:#b9cbd5;font-size:13px;letter-spacing:.08em;text-transform:uppercase;position:relative}
+.p11-credentialMark{position:absolute;right:35px;bottom:26px;font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.18em}
+.p11-b3Visual{background:linear-gradient(145deg,#071927,#113b5a)!important}
+.p11-b3Wordmark{position:absolute;left:42px;top:40px;font-weight:900;font-size:46px;letter-spacing:-.08em;color:#fff}
+.p11-certCopy{padding:56px 58px!important;display:flex;flex-direction:column;justify-content:center}
+.p11-certCopy h3{font-size:46px!important;letter-spacing:-.045em!important;margin:15px 0 14px!important}
+.p11-certCopy p{font-size:17px!important;line-height:1.7!important;max-width:690px}
+.p11-certMeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.p11-certMeta span{border:1px solid #dce3e6;border-radius:999px;padding:7px 10px;font-size:10px;font-weight:800;letter-spacing:.06em;color:#60707a;background:#fafbfb}
+
+/* contact/footer */
+.p11-footer{padding:92px 0 28px!important;background:#05121c!important}
+.p11-contactShell{
+  border:1px solid rgba(255,255,255,.09);border-radius:32px;padding:30px;background:
+  radial-gradient(650px 420px at 85% 0%,rgba(47,126,157,.18),transparent 62%),
+  linear-gradient(145deg,#071927,#06131e);
+  box-shadow:0 34px 110px rgba(0,0,0,.2)
+}
+.p11-contactTop{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:2px 4px 28px;border-bottom:1px solid rgba(255,255,255,.09)}
+.p11-contactEyebrow{font-size:9px;color:#8399a7;text-transform:uppercase;font-weight:850}
+.p11-availability{font-size:11px;color:#aebfc9;display:flex;align-items:center;gap:8px}
+.p11-availability span{width:7px;height:7px;border-radius:50%;background:#62b99f;box-shadow:0 0 0 5px rgba(98,185,159,.08)}
+.p11-contactGrid{display:grid;grid-template-columns:1.12fr .88fr;gap:72px;padding:58px 4px 44px}
+.p11-contactCopy h2{font-size:clamp(46px,6vw,78px);line-height:.94;letter-spacing:-.06em;font-weight:300;margin:0;color:#fff;max-width:740px}
+.p11-contactCopy h2 em{font-style:normal;color:#91c3d5;font-weight:700}
+.p11-contactCopy p{font-size:17px;line-height:1.7;color:#9fb1bd;max-width:650px;margin:28px 0 0}
+.p11-contactTags{display:flex;flex-wrap:wrap;gap:7px;margin-top:26px}
+.p11-contactTags span{border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 10px;font-size:10px;letter-spacing:.06em;color:#bac8d0}
+.p11-contactActions{align-self:end}
+.p11-contactActions a{
+  display:grid;grid-template-columns:1fr auto;gap:3px 18px;padding:19px 4px;border-top:1px solid rgba(255,255,255,.10);
+  transition:padding-left .2s ease,background .2s ease;
+}
+.p11-contactActions a:last-child{border-bottom:1px solid rgba(255,255,255,.10)}
+.p11-contactActions a:hover{padding-left:8px}
+.p11-contactActions small{grid-column:1;color:#7f96a4;font-size:9px;text-transform:uppercase;letter-spacing:.13em}
+.p11-contactActions strong{grid-column:1;color:#eef4f6;font-size:14px;font-weight:650}
+.p11-contactActions b{grid-column:2;grid-row:1/3;align-self:center;color:#8fc2d5;font-size:20px;font-weight:400}
+.p11-contactFoot{display:flex;justify-content:space-between;gap:18px;padding:22px 4px 2px;border-top:1px solid rgba(255,255,255,.09);color:#6f8592;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+
+/* loading/perf-friendly image sizing */
+img{content-visibility:auto}
+.careerBrand img,.regLogo img,.p11-issuer img{transform:translateZ(0)}
+
+@media(max-width:980px){
+  .p11-certHeader{grid-template-columns:1fr;gap:16px}
+  .p11-certPanel{grid-template-columns:1fr!important}
+  .p11-credentialVisual{min-height:310px}
+  .p11-contactGrid{grid-template-columns:1fr;gap:42px}
+}
+@media(max-width:620px){
+  .portrait:after{left:18px!important;bottom:16px!important;font-size:8px!important}
+  .careerBrand img{max-width:66%!important}
+  .careerBrand.itau img{max-width:36%!important}
+  .careerBrand.san img{max-width:52%!important;padding:16px 20px!important}
+  .p11-credentials{padding:82px 0!important}
+  .p11-certStage{border-radius:24px!important}
+  .p11-credentialVisual{min-height:265px;padding:28px}
+  .p11-credentialVisual:before{inset:16px}
+  .p11-issuer{left:28px;top:28px;width:132px;height:52px}
+  .p11-b3Wordmark{left:28px;top:28px}
+  .p11-credentialCode{font-size:42px}
+  .p11-credentialMark{right:26px;bottom:23px}
+  .p11-certCopy{padding:34px 28px 38px!important}
+  .p11-certCopy h3{font-size:38px!important}
+  .p11-contactShell{padding:22px;border-radius:26px}
+  .p11-contactTop{align-items:flex-start;flex-direction:column}
+  .p11-contactGrid{padding:42px 0 34px}
+  .p11-contactCopy h2{font-size:49px}
+  .p11-contactFoot{flex-direction:column;gap:7px}
+}
+
+
+/* V11.1 — mobile refinement from device review */
+.p11-issuer{overflow:hidden}
+.p11-issuer img{width:100%!important;height:100%!important;object-fit:contain!important}
+
+/* Institution images that carry a white canvas blend naturally into light brand fields. */
+.careerBrand.qi img,.careerBrand.stone img{mix-blend-mode:multiply}
+.careerBrand.qi img{max-width:50%!important}
+.careerBrand.stone img{max-width:44%!important}
+
+@media(max-width:620px){
+  html{scroll-padding-top:76px}
+  body{font-size:16px}
+  .wrap{width:auto!important;max-width:none!important;padding-left:20px!important;padding-right:20px!important}
+  .nav .wrap{width:auto!important}
+  .navin{height:66px!important}
+  .brand{font-size:10.5px!important;letter-spacing:.075em!important}
+  .p10-menuBtn{font-size:11px!important;padding:0 8px!important}
+
+  /* Hero — keeps the portrait important without letting it dominate the first screen. */
+  .heroGrid{padding-top:18px!important}
+  .portrait{height:318px!important;border-radius:0 0 24px 24px!important;margin:0 -20px!important}
+  .portrait img{object-position:center 18%!important}
+  .portrait:after{left:20px!important;bottom:17px!important;letter-spacing:.19em!important}
+  .heroCopy{padding:42px 0 58px!important}
+  .hero h1{font-size:48px!important;line-height:.93!important;margin:17px 0 24px!important}
+  .heroLead{font-size:22px!important;line-height:1.22!important}
+  .heroText{font-size:15px!important;line-height:1.66!important}
+  .p10-heroMeta{margin-top:23px!important}
+
+  /* Mobile section rhythm */
+  .now,.p10-expertise,.journey,.p10-focus,.reg,.p11-credentials,.education{padding:70px 0!important}
+  .display{font-size:38px!important;line-height:1.04!important}
+  .sectionIntro .display{font-size:38px!important}
+  .sectionIntro>p,.p10-sectionCopy,.p11-certHeader>p{font-size:15px!important;line-height:1.62!important}
+  
+  /* Journey: all periods remain visible. No clipped horizontal chips. */
+  .journey .wrap{width:auto!important}
+  .journey .tabRail{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    overflow:visible!important;
+    padding:0!important;
+    margin:28px 0 14px!important;
+    mask-image:none!important;
+    -webkit-mask-image:none!important;
+  }
+  .journey .tabRail label{
+    width:100%!important;
+    min-width:0!important;
+    min-height:54px!important;
+    padding:10px 12px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.18!important;
+    font-size:11.5px!important;
+    border-radius:15px!important;
+  }
+  .journey .tabRail label:last-child:nth-child(odd){grid-column:1/-1}
+  .careerStage{border-radius:22px!important}
+  .careerBrand{min-height:205px!important;padding:26px 22px!important}
+  .careerBrand:before{inset:14px!important;border-radius:18px!important}
+  .careerBrand img{max-height:86px!important;max-width:54%!important}
+  .careerBrand.qi img{max-width:46%!important}
+  .careerBrand.nano img{max-width:60%!important}
+  .careerBrand.san img{max-width:46%!important;padding:12px 16px!important;border-radius:12px!important}
+  .careerBrand.itau img{max-width:28%!important}
+  .careerBrand.stone img{max-width:42%!important}
+  .careerBody{padding:30px 26px 34px!important}
+  .careerBody .chapter{font-size:10px!important;letter-spacing:.16em!important}
+  .careerBody .year{font-size:11px!important}
+  .careerBody h3{font-size:34px!important;margin:10px 0 7px!important}
+  .careerBody h4{font-size:16px!important;line-height:1.35!important;margin-bottom:20px!important}
+  .careerBody p{font-size:15.5px!important;line-height:1.58!important}
+  .careerHighlight{font-size:11.5px!important}
+  .hiIcon{width:26px!important;height:26px!important;font-size:21px!important}
+
+  /* Regulation: 2x2 control panel rather than a cropped horizontal carousel. */
+  .regBrand{gap:8px!important;margin:26px 0!important}
+  .regLogo{width:calc(50% - 4px)!important;height:68px!important;min-height:68px!important;border-radius:14px!important;padding:10px 12px!important}
+  .regLogo img{height:44px!important;max-height:44px!important;max-width:155px!important}
+  .regShell{grid-template-columns:1fr!important;border-radius:22px!important}
+  .regNav{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+    overflow:visible!important;
+    padding:10px!important;
+    border-right:0!important;
+    border-bottom:1px solid #29465b!important;
+  }
+  .regNav label{
+    min-width:0!important;
+    min-height:54px!important;
+    margin:0!important;
+    padding:10px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.2!important;
+    font-size:11px!important;
+    border-radius:12px!important;
+  }
+  .regPanel{padding:30px 24px 34px!important}
+  .regPanel h3{font-size:32px!important;line-height:1.05!important}
+  .regPanel p{font-size:15px!important;line-height:1.6!important}
+  .regFlow{gap:8px!important}
+  .regStep{min-height:0!important;padding:15px!important}
+
+  /* Credentials: compact 2x2 selector and shorter, denser credential card. */
+  .p11-certHeader{margin-bottom:24px!important}
+  .p11-credentialRail{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    overflow:visible!important;
+    padding:0!important;
+    margin:0 0 14px!important;
+    mask-image:none!important;
+    -webkit-mask-image:none!important;
+  }
+  .p11-credentialRail label{
+    min-width:0!important;
+    width:100%!important;
+    min-height:50px!important;
+    padding:10px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    line-height:1.15!important;
+    font-size:12px!important;
+    border-radius:15px!important;
+  }
+  .p11-certStage{border-radius:22px!important}
+  .p11-credentialVisual{min-height:220px!important;padding:24px!important}
+  .p11-credentialVisual:before{inset:14px!important;border-radius:17px!important}
+  .p11-issuer{
+    left:24px!important;top:24px!important;
+    width:108px!important;height:40px!important;
+    padding:5px 8px!important;border-radius:9px!important;
+    box-shadow:0 10px 26px rgba(0,0,0,.14)!important;
+  }
+  .p11-b3Wordmark{left:24px!important;top:22px!important;font-size:36px!important}
+  .p11-credentialCode{font-size:38px!important}
+  .p11-credentialType{font-size:10.5px!important;letter-spacing:.09em!important;margin-top:7px!important}
+  .p11-credentialMark{right:22px!important;bottom:20px!important;font-size:9px!important}
+  .p11-certCopy{padding:28px 24px 32px!important}
+  .p11-certCopy .status{font-size:9px!important;padding:6px 9px!important}
+  .p11-certCopy h3{font-size:34px!important;margin:14px 0 12px!important}
+  .p11-certCopy p{font-size:15.5px!important;line-height:1.58!important}
+  .p11-certMeta{margin-top:20px!important;gap:6px!important}
+  .p11-certMeta span{font-size:9px!important;padding:6px 8px!important}
+
+  /* Education uses visible selectors rather than an off-screen rail. */
+  .eduTabs .tabRail{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:7px!important;
+    overflow:visible!important;
+    padding:0!important;
+    margin:26px 0 14px!important;
+    mask-image:none!important;
+    -webkit-mask-image:none!important;
+  }
+  .eduTabs .tabRail label{
+    min-width:0!important;width:100%!important;min-height:48px!important;
+    padding:9px 7px!important;font-size:10.5px!important;white-space:normal!important;text-align:center!important;line-height:1.15!important;border-radius:14px!important
+  }
+
+  /* Contact */
+  .p11-footer{padding:70px 0 22px!important}
+  .p11-contactShell{padding:18px!important;border-radius:22px!important}
+  .p11-contactGrid{padding:34px 0 28px!important;gap:30px!important}
+  .p11-contactCopy h2{font-size:42px!important;line-height:.96!important}
+  .p11-contactCopy p{font-size:15px!important;line-height:1.6!important;margin-top:22px!important}
+  .p11-contactActions a{padding:16px 2px!important}
+}
+
+/* Very narrow phones */
+@media(max-width:380px){
+  .journey .tabRail label{font-size:10.5px!important;padding:9px 8px!important}
+  .regNav label{font-size:10px!important}
+  .p11-credentialRail label{font-size:11px!important}
+  .eduTabs .tabRail label{font-size:9.8px!important}
+}
+
+
+
+/* Portfolio V12 — official brand assets + fluid institutional identity */
+:root{
+  --p12-navy:#061722;
+  --p12-blue:#0b4d71;
+  --p12-soft:#f3f6f6;
+  --p12-line:rgba(8,31,45,.10);
+}
+
+/* Career brand fields: no floating white plates. */
+.careerBrand{
+  min-height:420px!important;
+  border-radius:0!important;
+}
+.careerBrand:before{
+  inset:24px!important;
+  border-radius:26px!important;
+  opacity:.68;
+}
+.careerBrand img{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-height:116px!important;
+  max-width:58%!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  object-fit:contain!important;
+  mix-blend-mode:normal!important;
+}
+
+/* QI Tech: official SVG, integrated into a cool financial-infrastructure field. */
+.careerBrand.qi{
+  background:
+    radial-gradient(480px 260px at 72% 30%,rgba(43,173,205,.16),transparent 67%),
+    linear-gradient(145deg,#eff8fa,#dceef3 68%,#d3e8ee)!important;
+}
+.careerBrand.qi:before{border-color:rgba(16,75,99,.10)!important}
+.careerBrand.qi img{max-width:48%!important;max-height:94px!important}
+
+/* Nano: official white wordmark on graphite. */
+.careerBrand.nano{
+  background:
+    radial-gradient(430px 260px at 70% 28%,rgba(255,255,255,.075),transparent 68%),
+    linear-gradient(145deg,#050607,#111416)!important;
+}
+.careerBrand.nano img{
+  max-width:60%!important;
+  max-height:96px!important;
+  filter:none!important;
+}
+
+/* Santander: official mark rendered in white over brand red. */
+.careerBrand.san{
+  background:
+    radial-gradient(420px 250px at 78% 22%,rgba(255,255,255,.13),transparent 66%),
+    linear-gradient(145deg,#e30613,#c60012)!important;
+}
+.careerBrand.san img{
+  max-width:55%!important;
+  max-height:92px!important;
+  filter:brightness(0) invert(1)!important;
+}
+
+/* Itaú: current official icon gets space; the background does not compete with the logo. */
+.careerBrand.itau{
+  background:
+    radial-gradient(470px 260px at 76% 20%,rgba(236,112,0,.10),transparent 65%),
+    linear-gradient(145deg,#fff8ef,#f8efe3)!important;
+}
+.careerBrand.itau:before{border-color:rgba(153,87,15,.10)!important}
+.careerBrand.itau img{
+  max-width:27%!important;
+  max-height:132px!important;
+}
+
+/* Stone: official 2026 rebrand asset on a warm mint field. */
+.careerBrand.stone{
+  background:
+    radial-gradient(430px 280px at 78% 22%,rgba(0,168,104,.14),transparent 64%),
+    linear-gradient(145deg,#edfbf5,#d9f4e8)!important;
+}
+.careerBrand.stone:before{border-color:rgba(0,114,70,.10)!important}
+.careerBrand.stone img{
+  max-width:34%!important;
+  max-height:128px!important;
+  mix-blend-mode:multiply!important;
+}
+
+/* Regulation: treat institutions as editorial context, not white logo cards. */
+.p12-regInstitutions{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:10px!important;
+  margin:32px 0 38px!important;
+}
+.p12-regInstitution{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:16px 18px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;
+  background:rgba(255,255,255,.035);
+  box-shadow:none!important;
+}
+.p12-regInstitution>span:last-child{display:flex;flex-direction:column;gap:3px;min-width:0}
+.p12-regInstitution b{font-size:12px;color:#e8f0f4;letter-spacing:.02em}
+.p12-regInstitution small{font-size:10px;color:#7893a3;line-height:1.3}
+.p12-instMonogram{
+  flex:0 0 auto;
+  font-size:26px;
+  line-height:1;
+  letter-spacing:-.06em;
+  font-weight:850;
+  color:#79c1d8;
+}
+.p12-anbimaInstitution img{
+  width:88px!important;
+  height:32px!important;
+  object-fit:contain!important;
+  padding:0!important;
+  background:transparent!important;
+  filter:brightness(0) invert(1) opacity(.92)!important;
+  box-shadow:none!important;
+  border:0!important;
+  border-radius:0!important;
+}
+
+/* Credentials: issuer becomes a subtle signature, never a white card. */
+.p12-issuer{
+  position:absolute!important;
+  left:42px!important;
+  top:38px!important;
+  width:auto!important;
+  height:auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:7px!important;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.p12-issuer span{
+  font-size:8px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#7392a3;
+  font-weight:800;
+}
+.p12-issuer img{
+  width:112px!important;
+  height:34px!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  filter:brightness(0) invert(1) opacity(.92)!important;
+  background:transparent!important;
+}
+.p12-b3Wordmark{
+  position:absolute!important;
+  left:42px!important;
+  top:38px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:4px!important;
+  line-height:1!important;
+}
+.p12-b3Wordmark span{
+  font-size:8px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#7392a3;
+  font-weight:800;
+}
+.p12-b3Wordmark strong{
+  font-size:42px;
+  letter-spacing:-.08em;
+  color:#fff;
+  font-weight:900;
+}
+
+/* Small extra polish */
+.reg{background:
+  radial-gradient(700px 420px at 88% 8%,rgba(40,128,161,.12),transparent 65%),
+  #061725!important}
+.p11-credentialVisual{
+  background:
+    radial-gradient(480px 300px at 88% 10%,rgba(80,159,187,.14),transparent 61%),
+    linear-gradient(145deg,#061620,#0a3147)!important;
+}
+.p11-certCopy{background:#fff}
+.p11-certStage{overflow:hidden!important}
+
+@media(max-width:980px){
+  .careerBrand{min-height:250px!important}
+  .careerBrand img{max-height:96px!important}
+  .careerBrand.itau img{max-height:112px!important}
+}
+
+@media(max-width:620px){
+  .careerBrand{min-height:190px!important}
+  .careerBrand:before{inset:13px!important;border-radius:17px!important}
+  .careerBrand.qi img{max-width:50%!important;max-height:74px!important}
+  .careerBrand.nano img{max-width:56%!important;max-height:72px!important}
+  .careerBrand.san img{max-width:52%!important;max-height:72px!important}
+  .careerBrand.itau img{max-width:25%!important;max-height:88px!important}
+  .careerBrand.stone img{max-width:31%!important;max-height:90px!important}
+
+  .p12-regInstitutions{
+    grid-template-columns:1fr 1fr!important;
+    margin:24px 0 28px!important;
+    gap:8px!important;
+  }
+  .p12-regInstitution{
+    min-height:72px!important;
+    padding:13px 12px!important;
+    border-radius:14px!important;
+    gap:10px!important;
+  }
+  .p12-instMonogram{font-size:22px!important}
+  .p12-anbimaInstitution img{width:67px!important;height:27px!important}
+  .p12-regInstitution b{font-size:10.5px!important}
+  .p12-regInstitution small{font-size:8.8px!important}
+
+  .p12-issuer{
+    left:24px!important;
+    top:23px!important;
+    gap:4px!important;
+  }
+  .p12-issuer img{width:88px!important;height:27px!important}
+  .p12-issuer span{font-size:7px!important}
+  .p12-b3Wordmark{left:24px!important;top:22px!important}
+  .p12-b3Wordmark span{font-size:7px!important}
+  .p12-b3Wordmark strong{font-size:34px!important}
+}
+
+
+/* V12.1 — ANBIMA rendering fix + tighter institutional signature */
+.p12-anbimaInstitution{overflow:hidden}
+.p12-anbimaWord{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-width:90px;
+  color:#eef5f7;
+}
+.p12-anbimaWord i{
+  width:17px;height:17px;display:inline-block;position:relative;
+  transform:rotate(45deg);
+  border:2px solid #8fc4d7;
+  border-radius:2px;
+  box-shadow:7px -7px 0 -5px #b89a63;
+}
+.p12-anbimaWord strong{
+  font-size:15px!important;
+  line-height:1!important;
+  letter-spacing:.035em!important;
+  color:#eef5f7!important;
+  font-weight:850!important;
+}
+.p12-anbimaInstitution img{display:none!important}
+
+/* Credential issuer: no remote logo, no white plate, just a crisp institutional signature. */
+.p12-issuerText{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:6px!important;
+}
+.p12-issuerText>span{
+  font-size:8px!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+  color:#7392a3!important;
+  font-weight:850!important;
+}
+.p12-issuerText>strong{
+  font-size:18px!important;
+  line-height:1!important;
+  letter-spacing:.045em!important;
+  color:#f2f6f8!important;
+  font-weight:850!important;
+}
+.p12-issuerText:after{
+  content:"";
+  width:44px;height:2px;
+  margin-top:1px;
+  background:linear-gradient(90deg,#b89a63 0 46%,#79c1d8 46% 100%);
+  border-radius:2px;
+  opacity:.85;
+}
+
+/* Improve visual alignment between regulator identity cards */
+.p12-regInstitution{
+  justify-content:flex-start!important;
+}
+.p12-regInstitution .p12-instMonogram{
+  min-width:74px;
+}
+.p12-anbimaInstitution .p12-anbimaWord{
+  min-width:108px;
+}
+
+/* Make credential header slightly cleaner on phones */
+@media(max-width:620px){
+  .p12-anbimaWord{min-width:78px!important;gap:7px!important}
+  .p12-anbimaWord i{width:14px!important;height:14px!important}
+  .p12-anbimaWord strong{font-size:12.5px!important}
+  .p12-anbimaInstitution .p12-anbimaWord{min-width:84px!important}
+  .p12-regInstitution .p12-instMonogram{min-width:52px!important}
+
+  .p12-issuerText{left:24px!important;top:23px!important;gap:5px!important}
+  .p12-issuerText>span{font-size:7px!important}
+  .p12-issuerText>strong{font-size:15px!important}
+  .p12-issuerText:after{width:38px!important}
+}
+
+
+/* V12.2 — self-hosted career brands + mobile overflow cleanup */
+.careerBrand img{
+  pointer-events:none;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+/* All career marks are now local assets. The fields are intentionally quiet so
+   any white canvas in a legacy source image visually disappears into the panel. */
+.careerBrand.qi{
+  background:
+    radial-gradient(480px 260px at 74% 24%,rgba(38,169,199,.12),transparent 66%),
+    linear-gradient(145deg,#eef8fa,#dfedf1)!important;
+}
+.careerBrand.qi img{
+  max-width:44%!important;
+  max-height:92px!important;
+  mix-blend-mode:multiply!important;
+}
+
+.careerBrand.nano{
+  background:
+    radial-gradient(430px 260px at 70% 28%,rgba(255,255,255,.07),transparent 68%),
+    linear-gradient(145deg,#050607,#111416)!important;
+}
+.careerBrand.nano img{
+  max-width:58%!important;
+  max-height:92px!important;
+  mix-blend-mode:screen!important;
+}
+
+.careerBrand.san{
+  background:
+    radial-gradient(430px 260px at 76% 20%,rgba(227,6,19,.07),transparent 66%),
+    linear-gradient(145deg,#fff,#f8f4f4)!important;
+}
+.careerBrand.san:before{border-color:rgba(153,18,24,.10)!important}
+.careerBrand.san img{
+  max-width:48%!important;
+  max-height:96px!important;
+  filter:none!important;
+  mix-blend-mode:multiply!important;
+}
+
+.careerBrand.itau{
+  background:
+    radial-gradient(470px 260px at 76% 20%,rgba(236,112,0,.08),transparent 65%),
+    linear-gradient(145deg,#fffaf4,#f7efe7)!important;
+}
+.careerBrand.itau img{
+  max-width:29%!important;
+  max-height:126px!important;
+  mix-blend-mode:multiply!important;
+}
+
+.careerBrand.stone{
+  background:
+    radial-gradient(430px 280px at 78% 22%,rgba(0,168,104,.11),transparent 64%),
+    linear-gradient(145deg,#eefaf5,#dcf2e8)!important;
+}
+.careerBrand.stone img{
+  max-width:43%!important;
+  max-height:104px!important;
+  mix-blend-mode:multiply!important;
+}
+
+/* Journey coda: wrap instead of leaking horizontally on phones. */
+.p12-transitionLine{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:wrap!important;
+  gap:7px 9px!important;
+  width:100%!important;
+  max-width:100%!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-align:center!important;
+}
+.p12-transitionLine span{white-space:nowrap}
+.p12-transitionLine i{
+  font-style:normal;
+  opacity:.5;
+  font-size:.9em;
+}
+
+/* Institution cards should never crop their own labels. */
+.p12-regInstitution,
+.p12-regInstitution *{
+  box-sizing:border-box;
+}
+.p12-regInstitution{min-width:0!important;overflow:hidden}
+.p12-regInstitution>span:last-child{flex:1 1 auto!important;overflow:hidden}
+.p12-regInstitution b,
+.p12-regInstitution small{
+  display:block;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+
+/* Slightly calmer 'Em foco' introduction. */
+.p10-focus .p10-sectionHead{margin-bottom:38px!important}
+
+@media(max-width:620px){
+  /* Brand stage is shorter, and no mark depends on remote loading. */
+  .careerBrand{min-height:176px!important}
+  .careerBrand.qi img{max-width:48%!important;max-height:68px!important}
+  .careerBrand.nano img{max-width:56%!important;max-height:68px!important}
+  .careerBrand.san img{max-width:48%!important;max-height:70px!important}
+  .careerBrand.itau img{max-width:27%!important;max-height:82px!important}
+  .careerBrand.stone img{max-width:42%!important;max-height:76px!important}
+
+  .p12-transitionLine{
+    padding:6px 14px 0!important;
+    gap:5px 7px!important;
+    font-size:8px!important;
+    line-height:1.35!important;
+    letter-spacing:.10em!important;
+  }
+
+  /* Two compact stacked identity rows are more legible than squeezed half-width cards. */
+  .p12-regInstitutions{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    margin:22px 0 27px!important;
+  }
+  .p12-regInstitution{
+    min-height:62px!important;
+    padding:11px 14px!important;
+    gap:12px!important;
+  }
+  .p12-cvmInstitution .p12-instMonogram{min-width:72px!important}
+  .p12-anbimaInstitution .p12-anbimaWord{min-width:112px!important}
+  .p12-regInstitution b{font-size:10.5px!important}
+  .p12-regInstitution small{font-size:8.8px!important;line-height:1.25!important}
+
+  .p10-focus .p10-sectionHead{margin-bottom:26px!important}
+  .p10-focus .display{font-size:34px!important;line-height:1.02!important}
+  .p10-focus .p10-sectionCopy{font-size:14.5px!important;line-height:1.58!important}
+}
+
+@media(max-width:380px){
+  .p12-anbimaInstitution .p12-anbimaWord{min-width:98px!important}
+  .p12-regInstitution{padding-left:11px!important;padding-right:11px!important}
+}
+
+
+
+/* Final production refinements */
+:root{color-scheme:light}
+.skip-link{
+  position:fixed;left:16px;top:10px;z-index:9999;
+  transform:translateY(-180%);
+  background:#fff;color:#071521;border:1px solid rgba(7,21,33,.15);
+  padding:10px 14px;border-radius:999px;font-size:12px;font-weight:800;
+  box-shadow:0 12px 30px rgba(3,20,35,.12);transition:transform .18s ease
+}
+.skip-link:focus{transform:translateY(0)}
+a:focus-visible,button:focus-visible,label:focus-visible{
+  outline:3px solid rgba(54,157,196,.48)!important;
+  outline-offset:3px!important;
+}
+img{max-width:100%}
+.hero,.now,.p10-expertise,.journey,.p10-focus,.reg,.p11-credentials,.education,footer{content-visibility:auto;contain-intrinsic-size:auto 900px}
+.hero{content-visibility:visible;contain-intrinsic-size:auto}
+.p10-focusCard[aria-pressed="true"]{background:var(--p10-ink);color:#fff}
+@media(max-width:620px){
+  .hero,.now,.p10-expertise,.journey,.p10-focus,.reg,.p11-credentials,.education,footer{
+    contain-intrinsic-size:auto 720px
+  }
+}
