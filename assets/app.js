@@ -197,33 +197,3 @@
     document.documentElement.style.scrollBehavior='auto';
   }
 })();
-
-
-(() => {
-  const tiles=[...document.querySelectorAll('.p13-brandTile[data-journey]')];
-  if(!tiles.length) return;
-
-  const sync=()=>{
-    const checked=document.querySelector('.journeyTabs input[name="journey"]:checked');
-    tiles.forEach(tile=>{
-      const active=!!checked && tile.dataset.journey===checked.id;
-      tile.classList.toggle('is-active',active);
-      tile.setAttribute('aria-pressed',String(active));
-    });
-  };
-
-  tiles.forEach(tile=>{
-    tile.addEventListener('click',()=>{
-      const radio=document.getElementById(tile.dataset.journey);
-      if(!radio) return;
-      radio.checked=true;
-      radio.dispatchEvent(new Event('change',{bubbles:true}));
-      sync();
-    });
-  });
-
-  document.querySelectorAll('.journeyTabs input[name="journey"]').forEach(radio=>{
-    radio.addEventListener('change',sync);
-  });
-  sync();
-})();
